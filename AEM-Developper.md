@@ -334,6 +334,10 @@
   - A. Los derechos de replicación se evalúan de abajo hacia arriba en el árbol de nodos.
   - B. Los derechos de replicación permitidos tienen una prioridad más alta que los derechos de replicación denegados.
   - C. Para otorgar derechos de replicación a un usuario en cualquier recurso, el usuario debe tener permisos de lectura para /etc/replication y /bin.
+- Respuestas en inglés (A, B, C):
+  - A. Replication rights are evaluated from bottom to top in the node tree.
+  - B. Allowed replication rights take precedence over denied replication rights.
+  - C. To grant replication rights to a user on any resource, the user must have read permissions for /etc/replication and /bin.
 
 **Pregunta 65**
 - Enunciado: ¿Cuáles son tres causas si Dispatcher dejara de actualizar los archivos de caché en el directorio de caché en el servidor web? (Elija tres).
@@ -341,6 +345,10 @@
   - A. La solicitud a la página en cuestión contiene parámetros de cadena de consulta.
   - B. La solicitud a la página en cuestión tiene encabezados de autorización y dispatcher.any no contiene "allowAuthorized".
   - C. El agente de purga de Dispatcher está deshabilitado en la instancia de publicación.
+- Respuestas en inglés (A, B, C):
+  - A. The request to the page in question contains query string parameters.
+  - B. The request to the page in question has authorization headers, and dispatcher.any does not contain "allowAuthorized."
+  - C. The purging agent of Dispatcher is disabled on the publish instance.
 
 **Pregunta 66**
 - Enunciado: En una configuración típica de autor, publicación y dispatcher, ¿dónde se configura la purga de dispatcher?
@@ -361,9 +369,11 @@
 - Respuestas (A, C, D):
   - A. Configurar la purga de dispatcher para el autor que apunta a una uri del servidor web en la que se implementa y configura el Dispatcher.
   - C. Configurar agentes de replicación inversa para el autor que apuntan a publ, pub2 y pub3.
-  - D. Configurar un agente estático para el
-
- autor.
+  - D. Configurar un agente estático para el autor.
+- Respuestas en inglés (A, C, D):
+  - A. Configure the dispatcher flush for the author pointing to a webserver uri on which the Dispatcheris deployed and configured.
+  - C. Configure reverse replication agents for the author pointing to publ, pub2 and pub3.
+  - D. Configure a static agent for the author.
 
 **Pregunta 70**
 - Enunciado: ¿Qué expresión de "allowedPaths" en la plantilla permitiría crear una página con la ruta /content/main/page1/page2?
@@ -375,52 +385,69 @@
 - Respuestas (B, C):
   - B. Copiar solo los archivos JSP del componente parsys aplicable de /libs/foundation/components/parsys a /apps/foundation/components/parsys y modificarlos.
   - C. Crear un nuevo componente parsys en /apps/<idproyecto>/components/content/myparsys y aplicar la propiedad sling:resourceSuperType=foundation/components/parsys, modificar el JSP según corresponda.
-
+- Respuestas en inglés (B, C):
+  - B. Copy the only applicable parsys component JSPs from /libs/foundation/components/parsys to /apps/foundation/components/parsys and modify them.
+  - C. Create a new parsys component under/apps/<projectid>/components/content/myparsys and apply the property sling:resourceSuperType=foundation/components/parsy$, modify the JSP as applicable,
+    
 **Pregunta 72**
-- Enunciado: Usted ha iniciado sesión como usuarioA y está suplantando a usuarioB. ¿Cómo se registran sus actividades en access.log?
-- Respuesta (C): El usuario registrado es "userB".
+- Enunciado (Español): Usted ha iniciado sesión como usuarioA y está suplantando a usuarioB. ¿Cómo se registran sus actividades en access.log?
+- Enunciado (Inglés): You have logged in as userA and are impersonating userB. How are your activities logged in access.log?
+- Respuesta (C) (Español): El usuario registrado es "userB".
+- Respuesta (C) (Inglés): The logged-in user is "userB."
 
 **Pregunta 73**
 - Enunciado: ¿Qué paquete OSGI se debe deshabilitar para restringir la visualización de registros basados en web?
-- Respuesta (A): Adobe CRXDE Support (com.day.crx.crxde-support).
+- Respuesta (A) (Español): Adobe CRXDE Support (com.day.crx.crxde-support).
+- Respuesta (A) (Inglés): Adobe CRXDE Support (com.day.crx.crxde-support).
 
 **Pregunta 74**
 - Enunciado: ¿Qué complemento de Maven permite la instalación directa del paquete en AEM?
-- Respuesta (A): maven-sling-plugin.
+- Respuesta (A) (Español): maven-sling-plugin.
+- Respuesta (A) (Inglés): maven-sling-plugin.
 
 **Pregunta 75**
 - Enunciado: Al instalar Internet Information Services, ¿qué característica de desarrollo de aplicaciones debe estar habilitada para funcionar con el Dispatcher de AEM?
-- Respuesta (D): Extensiones ISAPI (ISAPI Extensions).
+- Respuesta (D) (Español): Extensiones ISAPI (ISAPI Extensions).
+- Respuesta (D) (Inglés): ISAPI Extensions (Extensiones ISAPI).
 
 **Pregunta 76**
 - Enunciado: ¿Qué se debe configurar para crear un archivo de registro personalizado con un nivel de registro diferente?
-- Respuesta (C): Configuración del registrador de registro de Apache Sling (Apache Sling Logging Logger Configuration).
+- Respuesta (C) (Español): Configuración del registrador de registro de Apache Sling (Apache Sling Logging Logger Configuration).
+- Respuesta (C) (Inglés): Apache Sling Logging Logger Configuration.
 
 **Pregunta 77**
 - Enunciado: ¿Cuál es un modo de ejecución "out-of-the-box" válido de Sling?
-- Respuesta (D): nosamplecontent.
+- Respuesta (D) (Español): nosamplecontent.
+- Respuesta (D) (Inglés): nosamplecontent.
 
 **Pregunta 78**
 - Enunciado: ¿Qué comando ingresarías en tu script de componente CQ para obtener la ruta de la plantilla de una página de AEM en la instancia de publicación?
-- Respuesta (C): Page.getTemplate().getPath().
+- Respuesta (C) (Español): Page.getTemplate().getPath().
+- Respuesta (C) (Inglés): Page.getTemplate().getPath().
 
 **Pregunta 79**
 - Enunciado: El mismo parámetro de configuración OSGI está presente en /libs/*/config y /apps/*/config y se ha modificado en ambos lugares, así como a través de la Consola Felix. Durante la ejecución, ¿cuál es el orden de recarga?
-- Respuesta (B): Consola Felix, /apps/*/config y /libs/*/config.
+- Respuesta (B) (Español): Consola Felix, /apps/*/config y /libs/*/config.
+- Respuesta (B) (Inglés): Felix Console, /apps/*/config, and /libs/*/config.
 
 **Pregunta 80**
 - Enunciado: ¿Cómo se elimina una propiedad dentro de un objeto Node?
-- Respuesta (B): node.setProperty("propertyName", null).
-
+- Respuesta (B) (Español): node.setProperty("propertyName", null).
+- Respuesta (B) (Inglés): node.setProperty("propertyName", null).
+- 
 **Pregunta 81**
 - Enunciado: Al configurar un archivo de registro personalizado en una instancia de publicación de producción, ¿cuáles de las siguientes afirmaciones son verdaderas? (Elija dos).
 - Respuestas (A, C):
   - A. La URL del Web Console http://<aemhost>:<port>/system/console/slinglog proporciona información sobre Sling Logging.
   - C. Cree un modo de ejecución basado en la configuración del registrador de Apache Sling Logging para el modo de ejecución de publicación como org.apache.sling.commons.log.LogManager.factory.config-<identlfier>.
-
+- Respuestas (A, C):
+  - A. The Web Console URL http://<aemhost>:<port>/system/console/slinglog provides information about Sling Logging.
+  - C. Create a run mode based on the Apache Sling Logging configuration for the publish run mode as org.apache.sling.commons.log.LogManager.factory.config-<identifier>.
+  
 **Pregunta 82**
 - Enunciado: ¿Qué hace el comando 'resolve' de vlt?
 - Respuesta (C): Elimina los archivos de artefactos relacionados con conflictos.
+- Respuesta (C): Deletes artifacts-related conflict files.
 
 **Pregunta 83**
 - Enunciado: Agrega "sling.run.modes=publish/f" en sling.properties y inicia la instancia utilizando el comando "java -jar aem-6-p4502.jar -r author". ¿En qué modo se iniciará la instancia?
@@ -432,11 +459,16 @@
   - A. Los derechos de acceso no deben asignarse a nivel de usuario individual.
   - C. Después de la instalación, actualice las contraseñas de los usuarios predeterminados para evitar violaciones de seguridad.
   - D. Utilice una instalación de prueba para garantizar las relaciones correctas entre Usuarios y Grupos.
-
+- Respuestas (A, C, D):
+  - A. Access rights should not be assigned at the individual user level.
+  - C. After installation, update the passwords of default users to prevent security breaches.
+  - D. Use a testing installation to ensure the correct relationships between Users and Groups.
+  
 **Pregunta 85**
 - Enunciado: ¿Cuál es la forma óptima de extraer contenido del repositorio JCR al sistema de archivos local?
 - Respuesta (A): Utilizar el comando VLT export.
-
+- Respuesta (A): Use the VLT export command.
+- 
 **Pregunta 86**
 - Enunciado: Una instancia de autor y una de publicación comparten un almacén de datos con una gran cantidad de activos. ¿Qué tipo de replicación se recomienda para evitar la duplicación de datos?
 - Respuesta (B): Replicación sin binarios (Binaryless replication).
@@ -450,6 +482,7 @@
 **Pregunta 88**
 - Enunciado: La ubicación de instalación predeterminada para AEM 6.0 en un servidor de aplicaciones es \${user.dfr}/crx-quickstart. ¿Qué método se utiliza para cambiar esta ubicación?
 - Respuesta (B): Configurar el parámetro sling.home en el archivo WEB-INF/web.xml del archivo WAR de AEM antes del despliegue.
+- Respuesta (B): Configure the sling.home parameter in the WEB-INF/web.xml file of the AEM WAR file before deployment.
 
 **Pregunta 89**
 - Enunciado: ¿Cuáles de las siguientes afirmaciones son verdaderas cuando una instancia de autor de AEM se inicia en modo de depuración? (Elija tres).
@@ -457,7 +490,11 @@
   - B. AEM se inicia con la opción -Xdebug (por ejemplo; java -Xdebug -Xnoagent -Djava.compiler=NONE Xmnjdwp:transport=dt_socket,server=y,suspend=n,address=30303–jar aem6~author-p4502).
   - C. AEM se inicia con una opción -debug (por ejemplo; java -jar aem6-author-p4502 -debug 30303) desde la línea de comandos.
   - D. Cuando AEM se inicia en modo de depuración, fuerza a la JVM a crear un proceso separado.
-
+- Respuestas (B, C, D):
+  - B. AEM is started with the -Xdebug option (e.g., java -Xdebug -Xnoagent -Djava.compiler=NONE -Xmnjdwp:transport=dt_socket,server=y,suspend=n,address=30303 -jar aem6~author-p4502).
+  - C. AEM is started with a -debug option (e.g., java -jar aem6-author-p4502 -debug 30303) from the command line.
+  - D. When AEM is started in debug mode, it forces the JVM to create a separate process.
+  
 **Pregunta 90**
 - Enunciado: ¿Cómo se puede incluir un JSP en una plantilla de Sightly?
 - Respuesta (B): <div data-sly-include="include.jsp"></div>.
@@ -477,10 +514,12 @@
 **Pregunta 94**
 - Enunciado: ¿Dónde se almacenan los permisos de nodos ACL para un nodo en el JCR?
 - Respuesta (C): Se almacenan como un nodo rep:policy bajo el mismo nodo.
+- Respuesta (C): They are stored as a rep:policy node under the same node.
 
 **Pregunta 95**
 - Enunciado: Crea un nodo nt:unstructured dentro de apps en CRXDE Lite y luego crea una carpeta dentro de apps y haces clic en guardar. ¿Cuál es el comportamiento esperado?
 - Respuesta (C): La carpeta y el nodo nt:unstructured se guardarán ambos.
+- Respuesta (C): The folder and the nt:unstructured node will both be saved.
 
 **Pregunta 96**
 - Enunciado: ¿Cuáles de las siguientes afirmaciones sobre la configuración de un entorno de desarrollo para un nuevo proyecto de AEM llamado "customer bank", que contiene servicios OSGi personalizados y componentes de AEM, son verdaderas? (Elija tres).
@@ -488,10 +527,15 @@
   - B. El repositorio para los archivos JAR de dependencia de AEM puede ser http://repo.adobe.com/nexus/content/groups/public/ o el Apache Archiva local con todas las dependencias requeridas.
   - C. Cree un proyecto Maven con el arquetipo multimodule-content-package-archetype desde el repositorio http://repo.adobe.com/nexus/content/groups/public/.
   - D. Cree un proyecto Maven con el arquetipo simple-content-package-archetype del repositorio http://repo.adobe.com/nexu5/content/gmups/public/.
-
+- Respuestas en ingles (B, C, D):
+  - Respuesta (B): The repository for AEM dependency JAR files can be http://repo.adobe.com/nexus/content/groups/public/ or the local Apache Archiva with all the required dependencies.
+  - Respuesta (C): Create a Maven project using the multimodule-content-package-archetype archetype from the http://repo.adobe.com/nexus/content/groups/public/ repository.
+  - Respuesta (D): Create a Maven project using the simple-content-package-archetype archetype from the http://repo.adobe.com/nexu5/content/gmups/public/ repository.
+  
 **Pregunta 97**
 - Enunciado: ¿Cuál es la diferencia entre extender un componente y la superposición de componentes?
 - Respuesta (B): La superposición se utiliza para anular la funcionalidad predeterminada del componente, mientras que la extensión se utiliza para ampliar la funcionalidad del componente a través del uso de Jerarquía de Recursos y super tipos.
+- Respuesta (B): Overlay is used to override the default functionality of the component, while extension is used to enhance the functionality of the component through the use of Resource Hierarchy and super types.
 
 **Pregunta 98**
 - Enunciado: ¿Cuál tiene la mayor preferencia durante el registro de Sling Servlet?
@@ -507,14 +551,17 @@
 **Pregunta 100**
 - Enunciado: Mientras modifica una configuración de paquete OSGi desde la Consola Web Felix, ¿cuándo se aplican los cambios de configuración?
 - Respuesta (D): Inmediatamente, ya que tiene prioridad en tiempo de ejecución.
+- Respuesta (D): Immediately, as it takes precedence at runtime.
 
 **Pregunta 101**
 - Enunciado: ¿Cuál de las siguientes afirmaciones sobre las bibliotecas de cliente es verdadera?
 - Respuesta (D): Use el servicio Day CQ HTML Library Manager en la consola de Felix para comprimir y minimizar el CSS generado para obtener un mejor rendimiento en sistemas de producción.
+- Respuesta (D): Use the Day CQ HTML Library Manager service in the Felix console to compress and minify generated CSS for better performance in production systems.
 
 **Pregunta 102**
 - Enunciado: ¿Cuál afirmación sobre una instancia de AEM iniciada con el modo de ejecución de autor es correcta?
 - Respuesta (D): El modo de ejecución no se puede cambiar a publicar después de la instalación.
+- Respuesta (D): The run mode cannot be changed to publish after installation.
 
 **Pregunta 103**
 - Enunciado: ¿Cuál es la forma correcta de usar las bibliotecas de cliente con Sightly?
@@ -527,18 +574,22 @@
 **Pregunta 105**
 - Enunciado: ¿Cuál es una forma válida de crear un servicio OSGI?
 - Respuesta (C): Clase de componente de servicio MyServiceImpl extends MyService.
+- Respuesta (C): Service component class MyServiceImpl extends MyService.
 
 **Pregunta 106**
 - Enunciado: Usando la configuración predeterminada del Dispatcher, ¿qué tipo de URL tendrá una respuesta en caché por el Dispatcher?
 - Respuesta (D): URL con una extensión en su sufijo.
+- Respuesta (D): URL with an extension in its suffix.
 
 **Pregunta 107**
 - Enunciado: ¿Cómo proporciona AEM el modelo de página a una Aplicación de Página Única (SPA)?
 - Respuesta (C): El modelo de página de la SPA se proporciona en las bibliotecas de cliente.
+- Respuesta (C): The SPA page model is provided in the client-side libraries.
 
 **Pregunta 108**
 - Enunciado: ¿Cuál sería un buen caso de uso para usar AEM para editar tu Aplicación de Página Única (SPA)?
 - Respuesta (D): Agrega la capacidad para que los autores interactúen con el contenido de la SPA.
+- Respuesta (D): Adds the ability for authors to interact with the content of the SPA.
 
 **Pregunta 109**
 - Enunciado: Un cliente ha solicitado compartir una versión HTML del informe de cobertura de pruebas para el proyecto de AEM. ¿Qué complemento debe utilizar el desarrollador de AEM para generar el informe de cobertura de pruebas utilizando el último arquetipo?
@@ -555,22 +606,33 @@
 **Pregunta 112**
 - Enunciado: Un proyecto requiere compartir información entre componentes de SPA. ¿Cuál es el enfoque menos complejo para lograr ese objetivo?
 - Respuesta (B): Centralice la lógica y transmita a los componentes necesarios.
+- Respuesta (B): Centralize the logic and pass it to the required components.
 
 **Pregunta 113**
 - Enunciado: Un desarrollador de AEM crea un índice de OAK Lucene personalizado para /content/mywebsite bajo el nodo /oak:index. Mientras prueba el sitio en vivo, se descubre que el índice no se aplica a ninguna consulta dentro del sitio web. Los índices de Lucene predeterminados con alto costo son recogidos por AEM.
 - Respuesta (B): El índice de OAK Lucene personalizado debe reemplazarse con el índice de propiedad de OAK Lucene.
+- Respuesta (B): The custom OAK Lucene index should be replaced with the OAK Lucene property index.
 
 **Pregunta 114**
 - Enunciado: Se requiere que una aplicación de AEM cree URL absolutas para el dominio web en el que se supone que se ejecutará la aplicación. El desarrollador desea crear las URL absolutas en el servidor para facilitar otros casos de uso de SEO y Analítica.
 - Respuesta (C): Configure el Day CQ Link Externalizer para agregar una asignación de dominio al Editor de Autor y Publique la página.
+- Respuesta (C): Configure the Day CQ Link Externalizer to add a domain mapping in the Author instance and Publish the page.
 
 **Pregunta 115**
 - Enunciado: Un desarrollador de AEM tiene el requisito de agregar una nueva pestaña personalizada a las propiedades de página de una página específica. El sling:resourceType de esa página es "foo/components/page" y el sling:resourceSuperType de esa página es "core/wcm/components/page/v2/page".
-- Respuesta (A): 1. Copie el cq:dialog de app/core/wcm/components/page/v2/page a app/foo/components/page 2. Elimine todas las pestañas 3. Agregue la pestaña personalizada
+- Respuesta (A): 
+  1. Copie el cq:dialog de app/core/wcm/components/page/v2/page a app/foo/components/page 
+  2. Elimine todas las pestañas 
+  3. Agregue la pestaña personalizada
+- Respuesta (A):
+  1. Copy the cq:dialog from app/core/wcm/components/page/v2/page to app/foo/components/page.
+  2. Remove all tabs.
+  3. Add the custom tab.
 
 **Pregunta 116**
 - Enunciado: Una aplicación AEM personalizada contiene el Bundle A y el Bundle B. El Bundle A tiene una dependencia con el Bundle B a través de Import-Package.
 - Respuesta (D): Incruste ambos paquetes en un solo paquete de contenido; la dependencia a través de Import-Package es suficiente para garantizar la instalación correcta.
+- Respuesta (D): Embed both packages into a single content package; the dependency through Import-Package is enough to ensure proper installation.
 
 **Pregunta 117**
 - Enunciado: Un desarrollador de AEM está configurando un nuevo proyecto de AEM para una SPA personalizada que utilizará el SPA Editor.
@@ -579,14 +641,23 @@
 **Pregunta 118**
 - Enunciado: Se requiere que una aplicación de AEM sea altamente disponible y escalable en un escenario geográfico distribuido.
 - Respuesta (C): Oak Cluster con conmutación por error de MongoMK en varios centros de datos.
+- Respuesta (C): Oak Cluster with MongoMK failover across multiple data centers.
 
 **Pregunta 119**
 - Enunciado: Un desarrollador de AEM necesita eliminar la opción de pre título desde el diálogo del componente Core Teaser.
-- Respuesta (B): 1. Cree un archivo llamado .content.xml dentro de esa nueva carpeta. 2. Copie solo la estructura de nodos que se modificará en .content.xml. 3. Agregue sling:hideChildren[pretitle] al nodo padre del nodo pretitle.
+- Respuesta (B): 
+  1. Cree un archivo llamado .content.xml dentro de esa nueva carpeta. 
+  2. Copie solo la estructura de nodos que se modificará en .content.xml. 
+  3. Agregue sling:hideChildren[pretitle] al nodo padre del nodo pretitle.
+- Respuesta (B):
+  1. Create a file named .content.xml inside that new folder.
+  2. Copy only the node structure that will be modified into .content.xml.
+  3. Add sling:hideChildren[pretitle] to the parent node of the pretitle node.
 
 **Pregunta 120**
 - Enunciado: ¿Qué está fuera del alcance de la herramienta de detección de patrones durante una actualización de AEM?
 - Respuesta (B): Compatibilidad hacia atrás con la versión anterior de AEM.
+- Respuesta (B): Backward compatibility with the previous version of AEM.
 
 **Pregunta 121**
 - Enunciado: Una aplicación de AEM desea configurar la multiinquilidad utilizando las mejores prácticas recomendadas por Adobe y vincular múltiples configuraciones a ella.
@@ -603,14 +674,17 @@
 **Pregunta 124**
 - Enunciado: Un cliente agrega bibliotecas de cliente de terceros para agregar algunas características en una aplicación AEM existente, lo que reducirá significativamente el rendimiento. ¿Cuál es la mejor opción para que el desarrollador de AEM optimice el sitio?
 - Respuesta (C): Incrustar bibliotecas de cliente para consolidarlas en menos archivos.
+- Respuesta (C): Embed client libraries to consolidate them into fewer files.
 
 **Pregunta 125**
 - Enunciado: Mientras realiza una actualización de AEM en su lugar, el desarrollador observa un problema en los registros del servidor donde todos están activos excepto el paquete de ACS Commons, que es incompatible debido a la versión antigua. ¿Qué debería hacer el desarrollador para resolver este problema?
 - Respuesta (C): Colocar el nuevo paquete en la ruta crx-quickstart/install y reiniciar.
+- Respuesta (C): Place the new package in the crx-quickstart/install path and restart.
 
 **Pregunta 126**
 - Enunciado: Según el último arquetipo de AEM, ¿cuáles son los dos propósitos principales del módulo it.launcher? (elige dos)
 - Respuesta (B) y (D): Empaquetar el código que implementa ui.test en el servidor y Desencadenar la ejecución remota de Junit.
+- Respuesta (B) and (D): Package the code that implements ui.test on the server and Trigger remote Junit execution.
 
 **Pregunta 127**
 - Enunciado: Un desarrollador de AEM necesita automatizar las pruebas de interfaz de usuario. ¿Qué herramienta proporciona el framework AEM para pruebas automatizadas de interfaz de usuario?
@@ -619,14 +693,21 @@
 **Pregunta 128**
 - Enunciado: Una aplicación de AEM requiere un acceso de escritura de usuario para los nodos secundarios, pero no en el nodo principal en sí. ¿Qué consola debería utilizar el desarrollador para aplicar los permisos apropiados?
 - Respuesta (A): Consola de administración de usuarios
+- Respuesta (A): User Administration Console
 
 **Pregunta 129**
 - Enunciado: ¿Qué configuración tiene prioridad en tiempo de ejecución cuando existen múltiples configuraciones en AEM?
 - Respuesta (D): Nodos de repositorio bajo /apps/*/config...
+- Respuesta (D): Repository nodes under /apps/*/config...
 
 **Pregunta 130**
 - Enunciado: Un desarrollador de AEM recibe requisitos para Sling Models en un formato YAML legible por humanos. Se requiere construir una aplicación personalizada. Después de implementar ModelExporter, ¿qué método se debe utilizar para cumplir con este requisito?
-- Respuesta (B): 1. Crear modelos Sling para exportar como YAML 2. Configurar el tipo MIME en el Servicio de Tipo MIME de Apache Sling
+- Respuesta (B):
+  1. Crear modelos Sling para exportar como YAML 
+  2. Configurar el tipo MIME en el Servicio de Tipo MIME de Apache Sling
+- Respuesta (B): 
+  1. Create Sling models to export as YAML. 
+  2. Configure the MIME type in the Apache Sling MIME Type Service.
 
 **Pregunta 131**
 - Enunciado: Una aplicación de AEM requiere integración de servicios LDAP para sincronizar usuarios/grupos. ¿Cuáles son las dos configuraciones de OSGI necesarias para la integración LDAP en AEM? (Elige dos).
@@ -643,6 +724,7 @@
 **Pregunta 134**
 - Enunciado: Un desarrollador de AEM necesita crear un archivo de registro para el proyecto. ¿Cuál es el siguiente paso que debe tomar el desarrollador?
 - Respuesta (C): Crear un archivo de registro bajo /apps/myproject/configuration... carpeta específica del modo de ejecución.
+- Respuesta (C): Create a log file under /apps/myproject/configuration... mode-specific folder.
 
 **Pregunta 135**
 - Enunciado: Un desarrollador crea dos clases. ClassA tiene un código específico. El desarrollador agrega otra clase ClassB con código específico. ¿Qué acción debe tomar el desarrollador para ver los mensajes de registro en el mismo archivo desde ambas clases?
@@ -655,10 +737,12 @@
 **Pregunta 137**
 - Enunciado: La configuración OSGI se agrega a una configuración específica del modo de ejecución "config.author.staging" en AEM como un Servicio en la Nube. La aplicación no puede leer la configuración. ¿Cuál es una posible causa de este problema?
 - Respuesta (B): El modo de ejecución personalizado de OSGI utilizado (es decir, "config.author.staging") no es compatible en AEM como un Servicio en la Nube.
+- Respuesta (B): The custom OSGI run mode used (i.e., "config.author.staging") is not supported in AEM as a Cloud Service.
 
 **Pregunta 138**
-- Enunciado: ¿Dónde debería un desarrollador de AEM agregar una dependencia de frontend?
-- Respuesta (D): package.json
+- Enunciado: ¿Qué configuración/sección se debe utilizar para resolver el nombre de dominio mediante el Dispatcher?
+- Respuesta (A): La configuración en httpd.conf
+- Respuesta (A): Configuration in httpd.conf
 
 **Pregunta 139**
 - Enunciado: ¿Dónde debería un desarrollador de AEM agregar una dependencia de frontend?
@@ -679,14 +763,17 @@
 **Pregunta 143**
 - Enunciado: Un desarrollador está utilizando la configuración de contexto consciente de Sling y tiene problemas para obtener el recurso de configuración utilizando cfgResourceResolver. Esto funciona según lo previsto en el autor y en la publicación cuando se inicia sesión como administrador. Sin embargo, esto da nulo cuando se ejecuta como usuario anónimo. ¿Qué método resolverá el problema?
 - Respuesta (B): Aplicar permisos de lectura al usuario anónimo para el directorio /config.
+- Respuesta (B): Apply read permissions to the anonymous user for the /config directory.
 
 **Pregunta 144**
 - Enunciado: Un desarrollador necesita hacer que la plantilla T esté disponible como una página secundaria de la página P. La plantilla T coincide con la propiedad cq:allowedTemplates en la página P. ¿Qué debe cambiar el desarrollador?
 - Respuesta (B): Hacer que la propiedad allowedParents de la plantilla T coincida con la plantilla de la página P.
+- Respuesta (B): Make the allowedParents property of template T match the template of page P.
 
 **Pregunta 145**
 - Enunciado: Una aplicación de AEM debe procesar una alta cantidad de ingestión de contenido en el servidor de autor. ¿Cuál es un factor clave para optimizar el diseño para obtener un rendimiento general al implementar flujos de trabajo?
 - Respuesta (A): Utilizar flujos de trabajo transitorios.
+- Respuesta (A): Use Transient Workflows.
 
 **Pregunta 146**
 - Enunciado: Un desarrollador tiene problemas para incluir un nuevo componente incrustable en el componente Embed core. ¿Cuál es el enfoque que se debe utilizar para definir el nuevo componente?
@@ -695,10 +782,12 @@
 **Pregunta 147**
 - Enunciado: Un cliente necesita almacenar aproximadamente 200 elementos de datos en bruto de una API REST y mostrar cada elemento como una página de AEM. Existe una plantilla de página de borrador. ¿Cuál es el método que se debe utilizar para cumplir con este requisito?
 - Respuesta (D): Crear fragmentos de contenido vinculando los datos para cada elemento utilizando la plantilla de página de borrador y la lógica personalizada de recuperación de datos.
+- Respuesta (D): Create content fragments by linking data for each item using the draft page template and custom data retrieval logic.
 
 **Pregunta 148**
 - Enunciado: Un desarrollador ha construido un menú desplegable que contiene los cincuenta estados de EE. UU. como opción estática. El nodo de diálogo se llama "states". Un nuevo requisito solicita usar el mismo menú desplegable en el diálogo de otro componente. ¿Cuál sería un enfoque más modular para la solución?
 - Respuesta (A): 1. Extrapolar el nodo "states" a una ubicación más genérica. 2. Establecer esa nueva ubicación como el "sling:resourceSuperType".
+- Respuesta (A): 1. Extrapolate the "states" node to a more generic location. 2. Set that new location as the "sling:resourceSuperType".
 
 **Pregunta 149**
 - Enunciado: Un desarrollador identifica que algunas solicitudes para la página /content/sampleproject/page.html tardan más que otras solicitudes para la misma página. Se muestra un directorio $DOCROOT/content/sampleproject a continuación.
@@ -730,6 +819,7 @@
 **Pregunta 150**
 - Enunciado: AEM recomienda a un equipo que actualice los servidores de AEM mediante una Actualización en el lugar porque las versiones existentes han alcanzado el final de la vida útil (EOL). ¿Cuáles son dos desventajas de realizar una Actualización en el lugar a la última versión de AEM? (Elige dos).
 - Respuesta (C) y (E): Complejo proceso de configuración del desarrollador y automatización del proceso de actualización y Dependiendo de la diferencia de versión entre las instancias antiguas y nuevas, la actualización puede ser un proceso largo y arduo.
+- Respuesta (C) and (E): Complex developer configuration process and Automation of the update process, Depending on the version difference between old and new instances, the update can be a lengthy and arduous process.
 
 **Pregunta 151**
 - Enunciado: Una empresa desea reutilizar contenido en varios sitios multinacionales del mismo idioma y decide utilizar MSM en AEM. Esto permite reutilizar el contenido central y permitir variaciones nacionales. ¿Cuál es el diseño de MSM recomendado para el sitio?
@@ -741,6 +831,7 @@
    - El cliente tiene más de 100,000 páginas almacenadas en su instancia de AEM.
    - El cliente utiliza una propiedad de página personalizada para ayudar en la búsqueda de páginas de un tipo específico. ¿Qué debe hacer el desarrollador de AEM para ayudar a resolver el problema del cliente?
 - Respuesta (B): Crear un índice personalizado de Oak para la propiedad de página personalizada.
+- Respuesta (B): Create a custom Oak index for the custom page property.
 
 **Pregunta 153**
 - Enunciado: ¿Qué tipo de configuración se puede crear en el Administrador de configuración OSGI?
@@ -753,10 +844,12 @@
 **Pregunta 155**
 - Enunciado: Un servidor AEM está sobrecargado con demasiados flujos de trabajo en ejecución simultánea. El desarrollador decide reducir el número de flujos de trabajo en ejecución. ¿Qué se debe configurar para reducir el número de flujos de trabajo en ejecución simultánea?
 - Respuesta (B): El número máximo de trabajos paralelos en la consola OSGI.
+- Respuesta (B): The maximum parallel jobs in the OSGI console.
 
 **Pregunta 156**
 - Enunciado: A un equipo de desarrollo de aplicaciones de AEM se le asigna la tarea de crear una implementación de Capa de Datos basada en eventos para una solución de análisis. ¿Cuál es la mejor práctica recomendada por Adobe que el desarrollador debe elegir?
 - Respuesta (D): Utilizar Adobe Client Data Layer e integrarse con los componentes principales.
+- Respuesta (D): Use Adobe Client Data Layer and integrate with Core components.
 
 **Pregunta 157**
 - Enunciado: Un desarrollador de AEM establece una variable de argumento "myVariable" para ser consumida por el proceso de flujo de trabajo en la misma definición del modelo de flujo de trabajo. ¿Cuál enfoque se debe utilizar?
@@ -765,3 +858,4 @@
 **Pregunta 158**
 - Enunciado: Un desarrollador desea consumir los datos de página de AEM en una Aplicación de Página Única (SPA) codificada para comprender el formato JSON. Solo el contenido de la página debe exponerse a través de JSON. Todos los componentes existentes se basan en componentes de base. ¿Qué cambio debe realizar el desarrollador en los componentes existentes para cumplir con este requisito?
 - Respuesta (A): Implementar un Exportador de Modelos Sling para los componentes.
+- Respuesta (A): Implement a Sling Models Exporter for the components.
