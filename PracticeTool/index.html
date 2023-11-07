@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe Exam</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/skeleton.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script src="./js/questions/AD0-E116.js"></script>
+    <script src="./js/questions/architect.js"></script>
+
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <template id="template">
+        <div class="question">
+            <h5 class="question-number"></h5>
+            <div class="question-content">
+                <h5 class="question-title"></h5>
+                <ul></ul>
+                <p class="question-result hidden">
+                    <span class="question-answer"></span>
+                    <a class="question-docs" target="_blank"></a>
+                </p>
+            </div>
+        </div>
+    </template>
+
+    <h2 class="title">AD0-E116 Adobe Experience Manager Site Developer Expert</h2>
+    <nav>
+        <div class="three columns">
+            <label for="nQuestions">Número de preguntas: <span></span></label>
+            <input class="u-full-width" type="number" id="nQuestions" name="nQuestions" step="10" value="50">
+        </div>
+        <div class="two columns">
+            <select onchange="selectExam(this);" class="form-select" aria-label="Default select example">
+                <option selected>Select Exam</option>
+                <option value="AD0E116">Developer</option>
+                <option value="architect">Architect</option>
+              </select>
+        </div>
+        <div class="three columns">
+            <button type="button" disabled class="button-primary" onclick="jsonToForm();">Generar</button>
+            <button type="button" disabled class="button-secondary" onclick="jsonToForm(allQuestions);">Añadir mas</button>
+        </div>
+        <div class="four columns question-result hidden">
+            <button type="button" class="button-primary question-result nSuccess" disabled>
+                <span></span>Correctas
+            </button>
+            <button type="button" class="button-primary question-result nError" disabled>
+                <span></span>Incorrectas
+            </button>
+        </div>
+    </nav>
+
+    <section></section>
+
+    <button type="button" class="button-primary submit hidden" onclick="validateForm();">Validar</button>
+</body>
+
+</html>

@@ -1,0 +1,2748 @@
+1
+A developer needs to create a banner component. This component shows an image across the full width of thepage. A title is shown on top of the image. This text can be aligned to the left, middle, or right. The corecomponents feature a teaser component which matches almost all requirements, but not all.
+What is the most maintainable way for the developer to implement these requirements?
+A.
+Use and configure the teaser core component
+B.
+Create a new custom component from scratch.
+C.
+Overlay the teaser core component.
+D.
+Inherit from the teaser core component.
+Es la D.
+
+2
+A developer is working on a complex project with multiple bundles. One bundle provides an OSGi service forother bundles.
+Which two options are necessary to ensure that the other bundles can reference that OSGi service? (Choose two)
+A.
+The bundles consuming the service need to import the fully qualified name of the service interface.
+B.
+The service needs to correctly declare metatype information.
+C.
+The bundle providing the service needs to contain a whitelist of allowed consumer bundles.
+D.
+The bundle providing the service needs to contain an adequate SCR descriptor file.
+E.
+The bundle providing the service needs to export the java package of the service interface.
+Es la C y E.
+
+3
+The structure section of an editable template has a locked component.
+What happens to the content of that component when a developer unlocks it?
+A.
+The content stays in the same place but it ignored on pages using the template.
+B.
+The content is moved to the initial section of the editable template.
+C.
+The content is deleted after confirmation from the template author.
+D.
+The content is copied to the initial section of the editable template.
+Es la B.
+
+4
+Which log file contains AEM application request and response entries?
+A.
+response.log
+B.
+request.log
+C.
+history.log
+D.
+audit.log
+Es la B.
+
+5
+A developer creates a Sling Servlet. The Sling Servlet is bound to a path (/service/sling/sample). Refer to the resulting code below.
+@Component (inmediate=true,service = {Servlet.class})
+@SlingServletPaths(value ? {\"/service/sling/sample\"})
+What should the developer do to make the servlet access controlled using the default ACLs?
+A.
+Use @SlingServletResourceTypes instead of @SlingServletPaths. 
+B.
+Modify @SlingServletPaths(value = {\"/bin/sling/sample\" }). 
+C.
+Add @SlingServletName(servletName = \"AccessControlServlet\") annotation. 
+D.
+Add @SlingServletPrefix(value = \"/apps\") annotation. 
+Es la A.
+
+6
+A developer wants to extend AEM Core Components to create a custom Carousel Component.
+How should the developer extend the Core Components?
+A.
+Make changes to the original component and assign a component group.
+B.
+Use the sling:resourceSuperType property to point to the core component.
+C.
+Use the sling:resourceType property to point to the core component.
+D.
+Copy the Core Carousel component to /apps/<project> folder.
+Es la B.
+
+7
+A developer wants to change the log level for a custom API.
+Which OSGi configuration should the developer modify?
+A.
+Apache Sling Logging Configuration
+B.
+Apache Sling Log Tracker Service
+C.
+Apache Sling Logging Writer Configuration
+D.
+Adobe Granite Log Analysis Service
+Es la A.
+
+8
+A developer is installing a content package with the package manager. The developer needs to restrict theapproximate number of nodes in a batch that is saved to persistent storage in one transaction.
+How should the developer modify the number of transient nodes to be triggered until automatic saving?
+A.
+AEM instances automatically modify the number of transient nodes based on the load balancing.
+B.
+Modify the export package manifest header and copy the content package to AEM installation folder.
+C.
+Select the option MergePreserve for the Access Control Handling drop-down in the Install Package dialog-box.
+D.
+Change the value of Save Threshold in the Install Package dialog-box.
+Es la D.
+
+9
+A developer needs to implement a service component that should be manually configured by operations to react on operational circumstances. The service component should NOT be active by default. The service has the properties myservice.name (one string value) and myservice.stringValues (a list of the string values) to be configured.
+The developer needs to use OSGi Metatype annotations to make those properties configurable in the Apache Felix Web Console.
+Which set of steps should the developer take to meet these requirements?
+A.
+1. For the class fields myserviceName and myserviceStringValues, add a @AttributeDefinition annotation each with names set to myservice.name and myservice.stringValues respectively.
+2. Use the @Component annotation with configurationFactory = true on the service component class.
+3. Use the @Service service component class.
+4. Use the activate method of the service component class to get the configuration annotation interface class injected. 
+B.
+1. Create an annotation interface as inner class of the service component and annotate it with @ObjectClassDefinition.
+2. Apply @AttributeDefinition for the methods myservice.name and myservice.stringValues.
+3. Use the @Component annotation with configurationPolicy = ConfigurationPolicy.REQUIRE on the service component.
+4. Use the @Designate annotation to link the service component to the created configuration annotation interface.
+5. Use the activate method of the service component class to get the configuration annotation interface class injected. 
+C.
+1. Create an annotation interface as inner class of the service component and annotate it with @ObjectClassDefinition.
+2. Apply @AttributeDefinition for the methods myservice_name and myservice_stringValues.
+3. Use the @Component annotation with configurationPolicy = ConfigurationPolicy.REQUIRE on the service component.
+4. Use the @Designate annotation to link the service component to the created configuration annotation interface.
+5. Use the activate method of the service component class to get the configuration annotation interface class injected. 
+D.
+1. For the class fields myserviceName and myserviceStringValues, add a @Property annotation each with names set to myservice.name and myservice.stringValues respectively.
+2. Use the @Component annotation with configurationFactory = true on the service component class.
+3. Use the @Service service component class.
+4. The configuration is automatically injected into the field by the service component runtime.
+Es la C.
+
+10
+A developer creates Editable Templates based on a custom Page component. The developer wants toleverage the Style System within the Editable Templates to allow authors to switch between the Dark and Light Theme. The Style System dialog is NOT enabled for the site.
+What should the developer do to resolve this issue? *
+A.
+Define Style Definitions using Page Policy dialog on Editable Template.
+B.
+Create two new client libraries with a dark and light theme and map them to the Page component.
+C.
+Set the sling:resourceSuperType property to core/wcm/components/page/v2/page on the Page component.
+D.
+Create a new dialog for the custom Page components.
+Es la A.
+
+11
+A Null Pointer Exception occurs if NO charLimit values is set in the component dialog.
+What should the developer do to resolve this issue?
+A.
+Replace the defaultValue=\"0\" attribute of the \"˜charLimit' field in the dialog with min=\"0\".
+B.
+Add the @Default annotation to the \"˜chatLimit' variable in the Sling Model.
+C.
+Replace the defaultValue=\"0\" attribute of the charLimit field in the dialog with defaultValue=\"{Long}0\".
+D.
+Change the defaultInjectionStrategy of the Truncation Sling Model to DefaultInjectionStrategy.REQUIRED.
+Es la B.
+
+12
+After adding new features, a developer's environment is experiencing slowness before ultimately running out ofmemory. The initial log analysis points towards a large number of open sessions.
+Which action should the developer take to further monitor the overall session count on this AEM instance? *
+A.
+Run the following command to generate thread dumps jstack -l <pid> >> threaddumps.log,analyze thread dumps to find long running sessions.
+B.
+Go to Web Console > Status > Threads, verify the overall thread count.
+C.
+Go to Tools > Operations > Monitoring. Create a new report based on Number of Active Sessions as metric
+D.
+Go to <aem-install>/crx-qiuckstart/logs/strderr/log, use the following command grep -o 'CRXSessionImpl' strderr.log| wc -l.
+Es la C.
+
+13
+An online insurance company website has user-generated content that must be replicated in all publishinstances.
+What action should the developer take to achieve this?
+A.
+Configure the dispatcher flush agent in publish instance.
+B.
+Configure reverse replication agents for the author.
+C.
+Configure the replication agent in the publish instances.
+D.
+Disable static agent in the author instance.
+Es la B.
+
+14
+A developer must create a workflow step that assigns a 'WorkItem' to the appropriate person based on whohas the least amount work to do.The group that must perform the action is configured into the workflow.
+Which non-deprecated interface should the Java implementation class use to perform the assignment?
+A.
+com.adobe.granite.workflow.exec.ParticipantStepChooser
+B.
+com.day.cq.workflow.exec.ParticipantChooser
+C.
+com.day.cq.workflow.exec.WorkItem
+D.
+com.adobe.granite.workflow.exec.WorkflowData
+Es la A.
+
+15
+From which AEM Web Console should a developer access and download full AEM Log Files?
+A.
+Web Console -> System Information
+B.
+Status -> Log files
+C.
+OSGI -> Sing Log Service
+D.
+AEM -> Log files
+Es la B.
+
+16
+A developer needs to create a new component called \"Component A\". Component A must show a list of othercomponents that all have a resource type of existing \"Component B\". Component A must render this list of tilesfor each Component B where the tile rendering is different from the default one. The list of rendered tiles must be reusable by future new components.
+How should the developer implement this functionality?
+A.
+Create a script for tile rendering in Component B and use data-sly-resource attribute with a Sling selector in Component A to render the tile.
+B.
+Component A overlays Component B and overwrites the base renderer to facilitate the tiles.
+C.
+Component A inherits from Component B and overwrites the base renderer to facilitate the tiles.
+D.
+Component A calls the HTL of Component B directly using a data-sly-include attribute.
+Es la A.
+
+17
+For each CRX node in the hierarchy, which actions can be configured using the user admin interface?
+A.
+Read, Modify, Create, Delete, Read ACL, Edit ACL, Replicate
+B.
+Read, Write, Read ACL, Edit ACL, Replicate
+C.
+Read, Write, Delete, Edit ACL, Replicate
+D.
+Read, Modify, Create, Delete, Read ACL, Edit ACL
+Es la A.
+
+18
+An application runs specific license checks against certain DAM assets every day. It should send an email to aconfigured list if it finds warnings, and mark the asset accordingly. A service component that uses the ApacheSling Scheduler Service is created. DAM assets that must NOT be used anymore are hidden using ACLs andthe license check must re-check them.
+How should a developer obtain a resource resolver that can read and update the DAM assets?
+A.
+Set up a cron job with curl calls with the admin user and use request.getResourse ().getResourceResolver().
+B.
+Create a configuration line in PID com.day.cq.security.ACLSetup for the user that you obtain a session for via ResourceResolverFactory.getResourceResolver(...).
+C.
+Configure the user admin in PID org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl as user.default and make sure the service user exists and has jcr:read and jcr:write permissions.
+D.
+Create a configuration for PID org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amendeddamaccess that references a pre-created service user with r/w permissions and use ResourceResolverFactory.getServiceResourceResolver(...).
+Es la D.
+
+19
+A developer is creating templates and/or components using CRXDE Lite. The developer needs to check thefiles into source control.
+Which tool should the developer use to achieve this goal?
+A.
+vlt command
+B.
+Content Explorer
+C.
+http://localhost:4502/crx/checkout
+D.
+mvn command
+Es la A.
+
+20
+A custom AEM application is using the PageManager API.
+What should a developer add to make the application compile and run correctly in AEM?
+A.
+a maven dependency to AEM uber-jar to the content package
+B.
+a maven dependency to bundle cq-wcm-core to the application bundle
+C.
+a maven dependency to AEM uber-jar to the application bundle
+D.
+a maven dependency to bundle cq-wcm-api to the content package
+Es la C.
+
+21
+How should a developer enable remote debugging of an AEM server without modifying the AEM start script?
+A.
+Enable the remote debugging service through the AEM Cloud Services menu.
+B.
+Rename the quickstart jar file to include the additional debug settings.
+C.
+Enable the remote debugging service through the AEM Web Console.
+D.
+Include an additional JVM parameter when starting AEM with java -jar.
+Es la D.
+
+22
+A developer developed a workflow that makes a copy of every node created or modified under a certain pathto a different one. The workflow launches but the nodes are not copied over.
+Which two methods should the developer use to resolve this issue? (Choose two.)
+A.
+Go to Workflow Failures screen and check if any instances of the workflow are present. 
+B.
+Go to Workflow instances screen and verify that the instance of the workflow is present and check its status. 
+C.
+Go to Package Manager screen and reinstall the bundle that contains the workflow so it restarts. 
+D.
+Go to Workflow Models screen, then delete and recreate the workflow. 
+E.
+Go to Workflow Launchers and create a new launcher for the workflow even if one already exists.
+Es la A y B.
+
+23
+A developer creates an AEM editable template that includes a Layout Container. When the developer createsa page using this template, the Layout Container placeholder does NOT appear.
+What is causing this issue?
+A.
+The Layout Container does NOT have a policy.
+B.
+The page template has NOT been enabled.
+C.
+The page template has NOT been published.
+D.
+The Layout Container has NOT been unlocked.
+Es la D.
+
+24
+Too many pages are invalidated in the dispatcher cache when a page is published.
+What is most likely causing this issue in the dispatcher configuration?
+A.
+Sticky session are NOT configured properly, resulting in requests being delivered to the wrong server
+B.
+The level of cache invalidation is NOT appropriate for the published content model.
+C.
+File globbing in the dispatcher configuration is NOT correct
+D.
+The OS file system permissions are NOT properly configured.
+Es la B.
+
+25
+The requirement for the dialog is that the \"Align text\" field is shown after the \"Title\" field.
+What should the developer do without changing Component B?
+A.
+Move the align node from Component A to Component B and order them according the requirements.
+B.
+Extend Component B with the functionality of Component A.
+C.
+Add the property sling:orderBefore=\"description\" to the align node.
+D.
+Move all nodes under the item node from Component B to Component A and order them according the requirements.
+Es la C.
+
+26
+A service component periodically retrieves content from an external REST interface and saves the informationin JCR. The REST endpoint is configured via an OSGi service property. There is one URL for production(runmode prod) and another URL for all other environments.
+How should a developer configure the OSGi service?
+A.
+Underneath /apps/<project>/settings, create the sub folders global and prod and node with name <PID>.conf each and configure the properties via node properties.
+B.
+Underneath /config/<project>/settings, create the sub folders config.default and config.prod and a file with the name <PID>.config each and list the properties as key value pairs in there 
+C.
+Underneath /apps/<project>, create the sub folders config and config.prod and a file with the name <PID>.config each and list the properties as key value pairs in there.
+D.
+Underneath /config/<project>/settings, create the sub folders config and config.prod and a file with the name <PID>.config each and list the properties as key value pairs in there.
+Es la C.
+
+27
+What is the artifact ID of the maven dependency that contains all core AEM APIs?
+A.
+core-jar
+B.
+api-jar
+C.
+aem-jar
+D.
+uber-jar
+Es la D.
+
+28
+There are performance, stability, and security issues with an installed AEM instance.
+What should a developer do to fix these issues?
+A.
+Delete and reinstall the AEM instance.
+B.
+Install Adobe-provided Apache configuration file.
+C.
+Stop, clear cache files, and restart the AEM instance.
+D.
+Install service pack updates from package share.
+Es la D.
+
+29
+One content package of a custom application contains the following content paths.
+/apps/muproj/install
+/apps/myproj/components
+/apps/myproj/i18n
+The server also contains the content path /apps/myproj/configuration that must NOT be touched when installing the package.
+Which two filter definitions should a developer use to always update only the contained paths upon installation in the server? (Choose two.)
+A.
+<filter root=\"/apps/myproj\">
+    <exclude pattern=\"configuration.*\"/>
+</filter>
+B.
+<filter root=\"/apps/myproj\">
+    <include pattern=\".*\"/>
+    <exclude pattern=\"configuration.*\"/>
+</filter>
+C.
+<filter root=\"/apps/myproj\">
+    <exclude pattern=\"apps/myproj/configuration.*\"/>
+</filter>
+D.
+<filter root=\"/apps/myproj\" mode=\"merge\">
+</filter>
+E.
+<filter root=\"/apps/myproj\">
+    <include pattern=\"/apps/myproj/(install|components|i18n).*\"/>
+</filter>
+Es la C y E.
+
+30
+A developer needs to ensure that the path /content/<proj>/segments exists on all environments with thecorrect initial content that the developer provides in a package. Content that exists in that path should NOT beaffected.
+Which import mode should the developer use in the filter definition?
+A.
+update
+B.
+merge
+C.
+replace
+D.
+optional
+Es la B.
+
+31
+A developer has a component located under the path /apps. This component has a Client Library which isdirectly loaded onto a page. The publish instance loads the page correctly. The dispatcher also loads the page but the Client Library is missing.
+How should the developer resolve this issue, while taking security into consideration?
+A.
+Change the ACLs for the Client Library.
+B.
+Move the Client Library under /apps/<project>library.
+C.
+Add the property allowProxy with a boolean value true.
+D.
+Allow the path to the clientlibs on the dispatcher.
+Es la C.
+
+32
+A developer creates a custom Client Library named foobar.This Client Library embeds 5 other Client Libraries and contains 10 JavaScript source files. One of these files,called foo.js, has a bug on line 8 which causes an exception. The Client Library is throwing this exception online 1350 when it is included on a webpage.
+How should a developer find the exact line in foo.js where the exception has been thrown?
+A.
+1. Enable JS/CSS minification in OSGi configuration console for HTML Library Manager
+2. Check the JavaScript exception log in the OSGi web console
+B.
+1. Temporarily remove the embedded Client Libraries of the foobar Client Library.
+2. Use the browser JavaScript debugging tools.
+C.
+1. Add the selector debugClientLibs to the page request.
+2. Check the JavaScript exception log in the OSGi web console
+D.
+1. Add the query parameter debugClientLibs=true to the request.
+2. Use the browser JavaScript debugging tools.
+Es la D.
+
+33
+Which maven plugin is required to install a content package on a local AEM environment using maven?
+A.
+Maven Install Plugin
+B.
+FileVault Package Maven Plugin
+C.
+Content Package Maven Plugin
+D.
+Maven Bundle Plugin
+Es la C.
+
+34
+A developer needs to implement a functionality that requires creating a Custom Workflow Step.
+Which two steps should the developer take to start developing the custom behavior? (Choose two.)
+A.
+Implement a Java class with this method \"public void process(WorkItem item, WorkflowSession wfsession) throws WorkflowException\".
+B.
+Implement a Java class extending from class com.adobe.granite.workflow.exec.WorkflowProcess.
+C.
+Create a Workflow component node of the Super Resource Type \"cq/workflow/components/model/process\" under the folder /apps//components.
+D.
+Implement a Java class implementing the interface com.adobe.granite.workflow.exec.WorkflowProcess.
+E.
+Create a Workflow component node of the Super Resource Type \"cq/workflow/components/step\" under the folder /etc/workflow/models.
+Es la C y D.
+
+35
+In which two ways can a developer keep simple and maintainable CRX Access Control Lists? (Choose two.)
+A.
+Delete the 'everyone' group.
+B.
+Use Deny statements sparingly.
+C.
+Assign access rights to user groups rather than users.
+D.
+Assign access rights user by user.
+Es la B y C.
+
+36
+A developer wants to create a Client Library that will only be included on touch enabled devices.
+What action should the developer take to achieve this?
+A.
+Add the line \"#base=touch\" to the js.txt and css.txt files in the Client Library Folder.
+B.
+Create a resource folder called \"touch\" under the Client Library Folder.
+C.
+Set the channels property on the Client Library Folder to \"touch\".
+D.
+Pass the parameter user-agent='touch' when referencing the Client Library.
+Es la C.
+
+37
+A developer is working on a project locally and needs to install packages manually. The deployments to thelocalhost must be automated to speed up development. This functionality must be toggled on and off,depending on the needs of the developer.
+Which step should the developer take to achieve this?
+A.
+Configure the maven install plugin by defining the target URL, username, and password as maven properties.
+B.
+Run maven with the deploy phase. Maven will install the package on all local AEM instances running without further configuration.
+C.
+Add a maven profile and configure the content package maven plugin within this profile.
+D.
+Write a script that does a PUT call to AEM each time maven builds a new package.
+Es la C.
+
+38
+Which xml tag is used within the vault package definition to add a new path to a content package?
+A.
+<filter>
+B.
+<content>
+C.
+<path>
+D.
+<rule>
+Es la A.
+
+39
+A developer wants to automatically truncate request log files once they exceed 10 MB.
+Which OSGi configuration should the developer modify?
+A.
+Apache Sling Customizable Request Data Logger
+B.
+Adobe Granite Log Analysis Service
+C.
+Apache Sling Logging Writer Configuration
+D.
+Apache Sling Logging Configuration
+Es la C.
+
+40
+A Client-Side Library has the category \"library.example\".
+Which HTL statement should a developer use to reference only the CSS files of this Client-Side Library?
+A.
+<sly data-sly-use.clientlib=\"/libs/granite/sightly/templates/clientlib.html\" data-sly-call=\"\${clientlib.css @ categories='library.example'}\"/>
+B.
+<sly data-sly-use.clientlib=\"/libs/granite/sightly/templates/clientlib.html\" data-sly-call=\"\${clientlib.css @ category='library.example'}\"/>
+C.
+<sly data-sly-use.clientlib=\"/libs/granite/sightly/templates/clientlib.html\" data-sly-call=\"\${clientlib.all @ categories='library.example.css'}\"/> categories='library.example.css'}\"/>
+D.
+<sly data-sly-use.clientlib=\"/libs/granite/sightly/templates/clientlib.html\" data-sly-call=\"\${clientlib.all @ type='css', categories='library.example'}\"/>
+Es la A.
+
+41
+A developer needs to install a content package on AEM environment. However, a content package with thesame name is already installed.
+What would you be the safest way for the developer to install the content package to make sure only thechanges of the new content package get applied?
+A.
+Use the \"Force Upload option when uploading the new content package.
+B.
+Uninstall the existing content package before installing the new content package.
+C.
+Upload the content package to the CRX Package Share before installing it.
+D.
+Install the content package using the OSGi web console.
+Es la B.
+
+42
+A developer is creating a custom component on the page /latestBlogs.html that needs to list all the titlesof the blogs pages under /content/blogs.
+How does this component get the list of child pages?
+A.
+Instantiate a node object with session.getNode(/content/blogs) and then iterate through the child nodes and print the title for each.
+B.
+Use PageManager.getPage(\"/content/blogs\") of the static PageManager class to instantiate a Page object and then iterate through the child pages and print the title for each.
+C.
+Use the QueryDebugger to look for all children of /content/blogs and then iterate through the result set and print the title for each.
+D.
+Adapt the resourceResolver to the PageManager service, then use the getPage(/content/blogs) to instantiate a Page object and then iterate through the child pages and print the title for each.
+Es la C.
+
+43
+A banking AEM application contains functionality to calculate a mortgage rate based on user input. A servlet inplace calculates the result in the backend. A call to an internal third-party REST service is required to retrievethe average object value based on a given zip code.
+The following three service interfaces are used:MortgageCalculationServlet, MortgageCalculationService andObjectValueLookupRestService where MortgageCalculationServlet has a dependency toMortgageCalculationService and MortgageCalculationService has a dependency toObjectValueLookupRestService.
+The calculation has many combinations of input parameters and edge cases, so the JUnit coverage must beas high as possible.
+Which two strategies should the developer use to ensure testability of the application code? (Choose two.)
+A.
+Use BundleContext.getServiceReference(…) and BundleContext.getService(…) in application code to look up the required services just before usage.
+B.
+Use static methods to avoid boilerplate in application code.
+C.
+Use a mock framework to be able to create and inject mocks in the test code.
+D.
+Use the standard OSGi @Reference annotation to wire the dependencies in application code
+E.
+Deploy a third party dependency injection container to wire dependencies more efficiently in application code.ç
+Es la A y C.
+
+44
+A developer creates an editable template with a Layout Container. The developer needs to restrict the LayoutContainer to just one column layout.
+What should the developer do to the editable template to enforce this restriction?
+A.
+Using Template Editor, set the responsive settings to 1 column for Layout Container Policy.
+B.
+Add responsive column control component to the template and set column type to 1.
+C.
+Overlay wcm.foundation.components.page.responsive Client Library and set @max_col to 1.
+D.
+Using Template Editor, lock the Structure Component for the template.
+Es la A.
+
+45
+A custom AEM application has a run time dependency to a third party OSGi bundle that is NOT included inout-of-the-box AEM. The third party dependency needs to be available for multiple applications and beupgraded separately from the custom AEM application.
+How should a developer make sure that the bundle is installed on all environments?
+A.
+Add the dependency to the third party bundle in the pom.xml of the project bundle.
+B.
+Embed the third party bundle in the bundle that depends on it.
+C.
+Embed the bundle in a content package to have it automatically deployed.
+D.
+Declare the dependency correctly using a link to the OSGi Bundle Repository (OBR).
+Es la C.
+
+46
+A developer running a local AEM instance and working on an AEM project needs to change a large number offiles locally in the filesystem. The developer needs to get the changes uploaded to the local AEM instance toverify changes almost immediately in the browser?
+What action should the developer take to most efficiency meet these requirements?
+A.
+Access CRXDE and upload the files through the interface.
+B.
+Make the changes in CRXDE create a content package, download it, and expand it into the working directory after each change.
+C.
+Install FileVault bundle in the AEM instance and register the local working directory for synchronization.
+D.
+Build a Content Package using maven and deploy it after each change.
+Es la C.
+
+47
+A custom AEM application contains a service component that needs to access the JCR repository within theactivate method. The activate method usesResourceResolverFactory.getServiceResourceResolver(…) without specifying a sub servicename.
+What should a developer do to make sure the user service mapping for the service component is available?
+1/1
+A.
+Create a field of type ServiceUserMapped and annotate it with @Reference.
+B.
+Wait for the service ServiceUserMapper via BundleContext.getServiceReference(…).
+C.
+Create a field of type ServiceUserMapped and annotate it with @Reference using ReferencePolicy.DYNAMIC.
+D.
+Create a field of type ServiceUserMapper and annotate it with @Reference using ReferencePolicy.STATIC.
+Es la A.
+
+48
+After a recent code deployment, an AEM site is experiencing longer than usual query execution time. Thedeployment package contained some new Lucene index definitions. A developer needs to identify the longrunning queries and confirm that the new index definitions are getting applied correctly.
+Which action should the developer take to investigate this problem?
+A.
+Go to Tools > Operations >Diagnosis > Download Thread Dumps. Analyze the Thread Dumps to identify long running requests.
+B.
+Go to Tools > Operations >Diagnosis > Log Message. Configure DEBUG log level on com.day.cq.search to monitor search queries.
+C.
+Go to Tools > Operations > Diagnosis > Index Manager. Select the new Indexes and run a consistency check.
+D.
+Go to Tools > Operations >Diagnosis > Query Performance > Slow Queries. Select a Query and Click on Explain.
+Es la D.
+
+49
+A developer installs the latest Service pack to a local AEM author instance.
+How should the developer install this package on the publish instance?
+A.
+Replicate from package manager of publish instance.
+B.
+Use upload/install from OSGI console of publish instance.
+C.
+Use upload/install from OSGI console of author instance.
+D.
+Replicate from package manager of author instance.
+Es la D.
+
+50
+Two AEM publish feed a single Dispatcher.
+Which part of the Dispatcher configuration should a developer review to ensure both AEM publish instance areused?
+A.
+virtualhosts
+B.
+cache
+C.
+filter
+D.
+farms
+Es la D.
+
+51
+A developer needs an existing workflow to run only when pages are created under a certain folder?
+What should the developer create to achieve this?
+A.
+A Launcher with the field exclude that has the value !jcr:nodetype==cq:Page
+B.
+A Launcher with the field path pointing to the folder and nodetype field have the value cq:Page.
+C.
+A Launcher with the field path pointing to the folder and condition field and have the value jcr:content/jcr:primaryType==cq:Page.
+D.
+A Launcher with the field condition that has the value jcr:content/page.
+Es la B.
+
+52
+A developer creates a template-type for building editable templates.
+The resulting editable templates and pages must always contain a specific layout container that can NOT bedeleted by the author.
+How should the developer meet this requirement?
+A.
+Add the layout container component by including it on the actual page component.
+B.
+Add a content policy to the template-type to disable the removal of the layout container.
+C.
+Add the layout container component to the initial section of the template-type.
+D.
+Add the layout container component to the structure section of the template-type.
+Es la D.
+
+53
+An application contains an OSGi configuration that contains a password.
+How should a developer prevent this sensitive information from being stored in plain text in JCR?
+A.
+1. Use console at /system/console/crypto to encrypt the value.
+2. Either create an encrypted value for each AEM instance and use runmodes to apply the different values or make sure relevant instances share the same master key.
+3. When loading the value in the code, call CryptoSupport.unprotect(…) before using the value.
+B.
+1. Use console at /system/console/configMgr and tick the checkbox \"encrypt\" before saving a configuration.
+2. Use encrypted values work across all instances.
+3. When loading the value in the code, call CryptoSupport.unprotect(…) before using the value.
+C.
+1. Use console at /system/console/ configMgr and tick the checkbox \"encrypt\" before saving configuration.
+2. Either create an encrypted value for each AEM instance and use runmodes to apply the different values or make sure relevant instances share the same master key.
+3. Sensitive information is automatically decrypted using the CryptoSupport OSGi service before the value is returned.
+D.
+1. Use console at /system/console/crypto to encrypt the value.
+2. Either create an encrypted value for each AEM instance and use runmodes to apply the different values or make sure relevant instances share the same master key
+3. Sensitive information is automatically decrypted using the CryptoSupport OSGi service before the value is returned.
+Es la A.
+
+54
+Which environment variable in the AEM start script should a developer modify to enable remote debugging?
+A.
+CQ_HOST
+B.
+CQ_JVM_OPTS
+C.
+CQ_PORT
+D.
+CQ_RUNMODE
+Es la B.
+
+55
+AEM is installed in $AEM_HOME.
+In which subfolder are the command line startup and shutdown scripts located?
+A.
+$AEM_HOME/crx-quickstart/bin/
+B.
+$AEM_HOME/crx-quickstart/scripts/
+C.
+$AEM_HOME/
+D.
+$AEM_HOME/crx-quickstart/opt/
+Es la A.
+
+56
+A customer bundle of an application is in state \"Installed\" after deploying it with Maven.
+What should a developer do to change it to state \"Active\"?
+A.
+Use the \"Update\" action for the bundle in the Apache Felix Web Console.
+B.
+Use the \"Start\" action for the bundle in the Apache Felix Web Console.
+C.
+Reinstall the content package using the package manager.
+D.
+Ensure all OSGi requirements are met and re-deploy using Maven.
+Es la C.
+
+57
+Which log file should a developer use to search for exception stack traces?
+A.
+<aem-install>/crx-quickstart/logs/request.log
+B.
+<aem-install>/crx-quickstart/logs/error.log
+C.
+<aem-install>/crx-quickstart/logs/access.log
+D.
+<aem-install>/crx-quickstart/logs/info.log
+Es la B.
+
+58
+A developer needs to configure sets of values according to the following parameters:
+Varies for different staging environments
+Varies for different content paths
+Differs between author and publish
+Which implementation strategy should the developer use to meet these requirements?
+A.
+A custom cloud configuration
+B.
+A context aware configuration with buckets using an OSGi configuration
+C.
+One OSGi configuration for the set of values with runmodes
+D.
+A JCR property at the content root node of the site with inheritedPageProperties
+Es la B.
+
+59
+In which maven build phase is the content package assembled?
+A.
+compile
+B.
+deploy
+C.
+package
+D.
+install
+Es la C.
+
+60
+A developer needs to change the label \"Sites\" in the navigation of AEM author to \"Websites\".
+Which action should the developer take to achieve this?
+A.
+Modify the node /libs/cq/core/content/nav/sites by updating the icr:title property value.
+B.
+Change the code of /libs/granite/ui/components/shell/clientlibs/shell/js/globalnav.js to display the new value.
+C.
+Create a new node /apps/cq/core/content/nav/sites and update the property icr:title.
+D.
+Modify the code of /libs/granite/ui/components/shell/globalnav/overlay/overlay.jsp to display the new value.
+Es la C.
+
+61
+An AEM site experiences slower page loads. A developer needs to identify the slow running requests.
+How should a developer analyze the requests with long response times?
+A.
+Use rlog.jar with the following command $ java -jar ../opt/helpers/rlogs.jar -n 10 requests.log to identify long running requests.
+B.
+Use proxy.jar with the following command java -jar proxy.jar <host> <remoteport> <localport> to debug the webserver and AEM server communication.
+C.
+Download Heapdumps from Tools > Operations > Diagnosis and analyze the Heapdumps using the Memory Analyzer Tool.
+D.
+Embed /libs/foundation/components/timing component in the Page Component and verify the page load time.
+Es la A.
+
+62
+Which property should be used to find the repository where the configuration changes made in theWeb Console are saved?
+A.
+Persistent Identity (PID)
+B.
+Reference Repository
+C.
+Component.id
+D.
+Component.name
+Es la A.
+
+63
+Which statement about the usage of declarative services while creating an OSGi component is true?
+A.
+@Property annotation is used to reference to other services from the component by component runtime
+B.
+@Reference annotation is optional and used to define properties available to the component
+C.
+@Component annotation is the only required annotationand missing which will NOT declare the class as component
+D.
+@Service annotation is required and describes which service Interface Is served by thecomponent
+Es la C.
+
+64
+Which three statements about replicate permissions on a resource are true? (Choose three).
+A.
+The replication rights are evaluated bottom-up in the node tree.
+B.
+The allow replication rights has higher precedence than deny replication rights.
+C.
+To grant replication rights to a user on any resource, user has to have read permissions for/etc/replication, /bin.
+D.
+The allow replication rights has lower precedence than deny replication rights.
+Es la A, B y C.
+
+65
+What are three causes if Dispatcher stopped updating cache files in the cache directory on theWebserver? (Choose three).
+A.
+The request to the page in question contain query string parameters.
+B.
+The request to the page in question has authorization headers and dispatcher.any does no contain \allowAuthorized.
+C.
+Dispatcher Flush agent is disabled on publish instance.
+D.
+The request URI of the page in question should always start with /content.
+Es la A, B y C.
+
+66
+In a typical author, publish and dispatcher setup,
+where is the dispatcher flush configured?
+A.
+In the author instance.
+B.
+In the publish instance
+C.
+In the dispatcher module.
+D.
+At the webserver level.
+Es la B.
+
+67
+Which jar name can NOT be used to install an AEM publish instance?
+A.
+aem-publish-p4503, jar
+B.
+cq5-publish-4505, jar
+C.
+cq5-publish-4503, jar
+D.
+cq5-publish_4503, jar
+Es la D.
+
+68
+Which property is deprecated while resolving a template (T) that can be used as a template forpage (P)?
+A.
+cq:allowedTemplates property of the jcr:contentsubnode of P or an ancestor of P
+B.
+allowedPaths property of T
+C.
+allowedParents property of T
+D.
+allowedChildren property of the template of P
+Es la A.
+
+69
+Assume there are multiple publish instances (publ,pub2 and pub3) serving requests for an onlineshopping site. The end user is allowed to provide reviews and comments for each product andabout their shopping experience. The Dispatcher module is in place to load balance the requeststo publish instances and there is only one author instance, named author, where content editorscreate the pages. When a user, named User A, provides comments and the request being servedby publish Instance publ, in which three ways are these comments replicated to pub2 and pub3?(Choose three.)
+A.
+Configure the dispatcher flush for the author pointing to a webserver uri on which the Dispatcheris deployed and configured.
+B.
+Configure replication agents for the author pointing to publ, pub2 and pub3.
+C.
+Configure reverse replication agents for the author pointing to publ, pub2 and pub3.
+D.
+Configure a static agent for the author.
+Es la A, C y D.
+
+70
+Which template allowed Paths expression would allow a page to be created with the path/ content/ main / page1/ page2?
+A.
+/content/main/?
+B.
+/content/main/[^/]+(/,*)?
+C.
+/content/main/[A/]+[A/]
+D.
+/content/main/*
+Es la B.
+
+71
+You want to invert the order of display of components added to parsys provided out of the box.Recently added components always have to display on top.
+While implementing the new parsyscomponent, which two options are valid? (Choose two).
+A.
+Copy the parsys component and all its contents from /libs/foundation/components/parsys to /apps/foundation/components/parsys and modify the applicable JSPs.
+B.
+Copy the only applicable parsys component JSPs from /libs/foundation/components/parsys to /apps/foundation/components/parsys and modify them.
+C.
+Create a new parsys component under/apps/<projectid>/components/content/myparsys and apply the property sling:resourceSuperType=foundation/components/parsy$, modify the JSP as applicable,
+D.
+Create a new parsys component from scratch.
+Es la B y C.
+
+72
+You are logged in as userA and you are impersonating userB.
+How are your activities logged inthe access.log?
+A.
+The logged userld is \"userB impersonated by userA\"
+B.
+The logged userld is \"userA on behalf of userB\"
+C.
+The logged userld is \"userB\"
+D.
+The logged userld is \"userA\"
+Es la C.
+
+73
+Which OSGI bundle should be disabled to restrict web-based log viewing?
+A.
+Adobe CRXDE Support (com.day.crx.crxde-support)
+B.
+Apache Sling OSGiLogService Implementation (org.apache.sling.commons.logservi
+C.
+Granite Requests Logging (com.adobe.granite.requests.logging)
+D.
+Day Commons Library - Input/OutputSupport (day-commons-io)
+Es la A.
+
+74
+Which Maven plugin allows direct installation of the bundle into AEM?
+A.
+maven-sling-plugin
+B.
+maven-scr-plugin
+C.
+maven-bundle-plugin
+D.
+maven-javadoc-plugin
+Es la A.
+
+75
+When installing Internet Information Services, which Application Development Feature needs to beenabled to work with the AEM Dispatcher?
+A.
+ISAPI Filters
+B.
+Server-Side Includes
+C.
+CGI
+D.
+ISAPI Extensions
+Es la D.
+
+76
+Which should be configured to create a custom log file with a different log level?
+A.
+Apache Sling Log Configuration
+B.
+Apache Sling Logging Reader Configuration
+C.
+Apache Sling Logging Logger Configuration
+D.
+Apache Sling Logging Configuration
+Es la C.
+
+77
+Which is a valid out-of-the-box sling run mode?
+A.
+activate
+B.
+production
+C.
+loadsamplecontent
+D.
+nosamplecontent
+Es la D.
+
+78
+Which command would you enter in your CQ Component script to get the template path of an AEM page in publish instance?
+A.
+. Properties-get(\"cq:temp|ate\"/-);
+B.
+Page.getTemplate();
+C.
+Page.getTemplate().getPath();
+D.
+resource.getTemplate.getPath();
+Es la C.
+
+79
+The same OSGI configuration parameter is present under /libs/*/config.. AND /apps/*/config..andmodified in both locations as well as via felix Console.
+During runtime, what is the reload order?
+A.
+/libs/*/config, Felix Console and /apps/*/config
+B.
+Felix Console,/apps/*/config and /llbs/*/config
+C.
+/llbs/*/config, /apps/*/config and Felix Console
+D.
+/apps/*/config, /libs/*/config and Felix Console
+Es la B.
+
+80
+How do you delete a property inside a Node object?
+A.
+node.setProperty(npropertyName\",\"\");
+B.
+node.setProperty(\"propertyName\",null);
+C.
+node.delete(\"propertyName\");
+D.
+node.removeProperty(\"propertyName\");
+Es la B.
+
+81
+When configuring a custom log file on a production publish instance, which two statements aretrue? (Choose two).
+A.
+Web Console url http://<aemhost>:<port>/system/console/slinglog provides information about Sling Logging.
+B.
+lways start with the log level DEBUG on the production server to get more information.
+C.
+Create a run mode based on Apache Sling Logging Logger configuration for publish run mode as org.apache.sling.commons.log.LogManager.factory.config-<identlfier>.
+D.
+The physical location of the custom log file is NOT relative to the crx-quickstart folder.
+Es la A y C.
+
+82
+What does the vlt command 'resolve' do?
+A.
+Removes the conflict markers.
+B.
+Semantically resolves conflicts.
+C.
+Removes the conflict-related artifact files.
+D.
+Allows the path to be committed with the conflicts.
+Es la C.
+
+83
+You add \"sling.run.modes=publish/f in sling.properties and start the instance using the command\"java -jar aem-6-p4502.jar -r author\".
+In which mode will the instance start?
+A.
+Both author and publish.
+B.
+Author
+C.
+Publish
+D.
+Due to conflict in the run modes, AEM will not start
+Es la C.
+
+84
+Which three best practice statements are true regarding permissions and privileges? (Choose three).
+A.
+Access rights should not be assigned on a user-by-user basis.
+B.
+Use deny statements to specify the access rights of a group of users.
+C.
+After installation, update the passwords for the default users to prevent security breaches.
+D.
+Use a test installation to ensure correct relationships between Users and Groups,
+Es la A, C y D.
+
+85
+What is the optimal way to check-out content from the JCR repository to the local file system?
+A.
+Use VLT export command.
+B.
+Create and build a package using CQ Package manager. Download and unzip the package in the local file system.
+C.
+Use VLT import command.
+D.
+Download content from the repository as an XML file.
+Es la A.
+
+86
+An author and publish instance has a shared data store with a very large number of assets. Whichtype of replication is recommended to avoid duplication of data?
+A.
+Asynchronous replication.
+B.
+Binaryless replication.
+C.
+ClusterDataStore with no replication agents.
+D.
+. Replication with no versioning.
+Es la B.
+
+87
+Which two URLs will show the server logs? (Choose two.)
+A.
+http://{server}/system/console/status-slinglogs
+B.
+http://{server}/system/console/slinglog
+C.
+http://{server}/bin/crxde/logs
+D.
+http://{server}/system/console/logs
+Es la A y B.
+
+88
+The default installation location for AEM 6.0 in an Application Server is \${user.dfr}/crx-quickstart. Which method is used to change this location?
+A.
+Configure the sling.home parameter in the WEB-INF/web.xml file of the AEM WAR file after deployment.
+B.
+Configure the sling.home parameter in the WEB-INF/web.xml file of the AEM WAR file before deployment.
+C.
+Configure the sling.run.modes parameter in the WEB-INF/web.xml file of the AEM WAR file after deployment,
+D.
+Configure the sling.run.modes parameter in the WEB-INF/web.xml file of the AEM WAR file before deployment
+Es la B.
+
+89
+Which three statements are true when an AEM author instance is started in debug mode? (Choose three.)
+A.
+When AEM starts in debug mode, it does not force JVM to fork a separate process.
+B.
+AEMstarts with -Xdebug option (e.g;java -Xdebug -Xnoagent -Djava.compiler=NONE Xmnjdwp:transport=dt_socket,server=y,suspend=n/address=30303–jaraem6~autbor-p4502).
+C.
+AEM starts with an option -debug (e.g; Java -jaraem6-author-p4502 -debug 30303) from command line
+D.
+When AEM starts in debug mode, it forces JVM to fork a process.
+Es la B, C y D.
+
+90
+How can a JSP be included in a sightly template?
+A.
+<cq:include script=\" Include.jsp7>
+B.
+<div data-sly-include=\"include.jsp\"></div>
+C.
+<div data-sly-use=\"include.jsp\"></div>
+D.
+<%@ include file=\"1nclude.jsp\" %>
+Es la B.
+
+91
+You want to restrict the size of a custom log file and enable log file rotation. Which Apache Sling configuration has to be changed in the AEM Web Console?
+A.
+Apache Sling Composite Health Check
+B.
+Apache Sling Job Manager
+C.
+Apache Sling Logging Writer Configuration
+D.
+Apache Sling Logging Logger Configuration
+Es la C.
+
+92
+You are creating a new OSGi configuration in the repository. When are the configuration changesapplied?
+A.
+By stopping and starting the bundle that refer the service,
+B.
+Changes are applied as soon as the node is updated by restarting the service.
+C.
+Immediately.
+D.
+After restarting the CQ instance.
+Es la C.
+
+93
+Which log file in <cq-installation-dir>/crx-quickstrat/logs should you look at to see logging messages indicating events during startup?
+A.
+Audit.log
+B.
+Error.log
+C.
+Stdout.log
+D.
+Stderr.log
+Es la C.
+
+94
+Where are ACL node permissions for a node stored in the JCR?
+A.
+They are stored as ACL permission in the groups under /home/groups
+B.
+They are stored as ACL permissions in the user node under/home/users
+C.
+They are stored as rep:policy node under the same node
+D.
+They are stored inside the template node under/etc/designs
+Es la C.
+
+95
+You create an nt:unstructured node inside the apps in CRXDE Lite and then you create a folder inside the apps and click save. What is the expected behavior?
+A.
+The folder and nt:unstructured node, none of them will get saved.
+B.
+The folder will get saved after refreshing the apps.
+C.
+The folder and nt:unstructured node, both will get saved.
+D.
+The folder will get saved.
+Es la C.
+
+96
+Which three statements about configuring a development environment for a new AEM project called \"customer bank\", that contains both custom OSGi services and AEM components is true? (Choose three).
+A.
+http://<aemhost>:<aemport>/system/console/depfinderls used to find the dependencies
+B.
+The repository for AEM dependency jar files can be either http://repo.adobe.com/nexus/content/groups/public/ or the local Apache Archiva with all required dependencies
+C.
+Create a Maven project with archtypemultimodule-content-package-archetype from the repository http://repo.adobe.com/nexus/content/groups/public/
+D.
+Create a Maven project with archtype simple-content-package-archetype from repository http://repo.adobe.com/nexu5/content/gmups/public/
+Es la B, C y D.
+
+97
+What is the difference between extending a component and component overlay?
+A.
+There is NO difference.
+B.
+Overlay is to override default component functionality. Extending is to extend the component functionality through the use of Resource Hierarchy and super types.
+C.
+Overlay is to extend the component functionality through the use of Resource Hierarchy and super types. Extending is to override default component functionality.
+D.
+Extending component means extending the behavior of foundation component, Overlay component is overriding the behavior of custom component.
+Es la B.
+
+98
+Which has the highest preference during Sling Servlet registration?
+A.
+sling.servlet.paths
+B.
+sling.servlet.resourceTypes
+C.
+sllng.servlet.extension
+D.
+sling.servlet.selectors
+Es la A.
+
+99
+Which three AEM jar names will start AEM in author mode? (Choose three.)
+A.
+quickstart-4502.jar
+B.
+cq5-author-p4502.jar
+C.
+aem-publish.jar
+D.
+cq5-author-4502.jar
+Es la A, B y D.
+
+100
+While modifying an OSGi bundle configuration from the Felix Web Console, when are configuration changes applied?
+A.
+After restarting the CQ instance,
+B.
+After restarting the bundle.
+C.
+After restarting the service.
+D.
+Immediately as it takes precedence at runtime.
+Es la D.
+
+101
+Which statement about client libraries is true?
+A.
+A client library node type has the jcr:primaryType value nt:folder
+B.
+The clientlibrary for a project called myappshould be defined under /etc/clientlibs/myapp
+C.
+To include only CSS files In the header.jsp from the client lib called \"myproject.all\" use <cqincludeClientLib categories=\"myproject all\"/>
+D.
+Use the Day CQ HTML Library Manager service in the Felix console to compress and minify the generated CSS for better performance on production systems.
+Es la D.
+
+102
+Which statement regarding an AEM instance started with author run-mode is correct?
+A.
+Author run-mode CANNOT be used to preview a website,
+B.
+The side-kick does NOT appear in the author mode,
+C.
+The run-mode can be changed to publish after installation,
+D.
+The run-mode CANNOT be changed to publish after installation.
+Es la D.
+
+103
+What is the correct way to use clientlibs with Sightly?
+A.
+<meta data-sly-template=\"\${clientLib.all@ categories=,your.cllentlib,}\"data-sly-unwrap></meta>
+B.
+<meta data-sly-call=\"\${clientLib.all @ categories-,your.clientlib,}M data-sly-unwrap></meta>
+C.
+<meta data-sly-use-\"\${clientLib.all @ categorfes^'your.clientlib'}\" data-sly-unwrap></meta>
+D.
+<meta data-sly-include=n\${clientLib.all @ categories='your.cllentlib'}\" data-sly-unwrap></meta>
+Es la B.
+
+104
+You are using IIS as the Web server with the dispatcher and your websites root folder path is /content/mycompany. The page /content/mycompany/about us is edited and activated to the AEM publish instance. Assuming the dispatcher flush agent is NOT available and IIS is installed on C:\inetpub of the Windows server, what needs to done for the new version of the page to be seen from the IIS Web server?
+A.
+Delete the subfolders of the directory \"C:\inetpub\wwwroot\" to dear the content cache.
+B.
+Nothing.
+C.
+Delete the directory \"C:\inetpub\tempn to clear the content cache.
+D.
+Delete the following directory \"C:\inetpub\wwwroot\content\mycompany\" to clear the content cache.
+Es la B.
+
+105
+Which is avalid way of creating an OSGI service?
+A.
+class MyServiceImpl extends ServiceRegistry { } 
+B.
+Service classMyServiceImpl extends MyService } 
+C.
+©Component ©Service class MyServiceImpl extends MyService 
+D.
+/** * * */ classMyServiceImpI extends MyService { 
+Es la C.
+
+106
+Using the default Dispatcher configuration, which type of URL will have a response cached by the Dispatcher?
+A.
+URL denied by the /cache sections in dispatcher.any file.
+B.
+URL without a file extension.
+C.
+URL with query parameters.
+D.
+URL with an extension in its suffix.
+Es la D.
+
+107
+How does AEM provide the page model to a Single Page Application (SPA)
+A.
+The SPA requests the HTML from AEM usimg HTL or JSP
+B.
+The SPA requests the structure through the DOM
+C.
+The SPA requests the page model from the Content Services.
+D.
+The SPA page model is provided in client libraries.
+Es la C.
+
+108
+What would be a good use-case for using AEM to edit your Single Page Application (SPA)?
+A.
+Allows you to deploy the SPA
+B.
+Deploy the SPA on native devices
+C.
+Avoids the service of a front-end developer
+D.
+Adds the capability for authors to interact with the SPA content
+Es la D.
+
+
+109
+
+A client has asked to share an HTML version of test coverage report for the AEM project.
+
+What plugin should the AEM developer use to generate test coverage report using latest archetype?
+A.
+<plugin><groupId>org.codehaus.mojo</groupId><artifactId>selenium-maven-plugin</artifactId>....</plugin>
+
+B.
+<plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId>....</plugin>
+
+C.
+<plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-checkstyle-plugin</artifactId>....</plugin>
+
+D.
+<plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-pmd-plugin</artifactId>....</plugin>
+
+
+https://dzone.com/articles/reporting-code-coverage-using-maven-and-jacoco-plu
+
+Es la B.
+110
+
+AEM supports Traditional, Headless and Hybrid delivery capabilities in various ways.
+
+Which of the following are the tools enabling Omnichannel experience capability in AEM?
+A.
+1. Sling Model Exporter for Content Fragments and Experience Fragments
+2. AEM Assets HTTP API
+3. Content Services
+
+B.
+1. Sling Model Exporter for Content Fragments and Experience Fragments
+2. AEM Assets HTTP API
+3. GraphsQL API for Content Fragments and Experience Fragments
+
+C.
+1. AEM Assets HTTP API
+2. GraphsQL API for Content Fragments and Experience Fragments
+3. Content Services
+
+D.
+1. Sling Model Exporter for Content Fragments and Experience Fragments
+2. GraphsQL API for Content Fragments and Experience Fragments
+3. Content Services
+
+
+https://medium.com/adobetech/headless-commerce-content-management-with-aem-i-o-runtime-87c315283b74
+
+Es la A.
+111
+
+A developed has multiple LDAP Authentication providers. The user is not required to pass the authentication test of the Authentication provider.
+
+- If authentication succeeds, control is returned to the caller; no subsequent Authentication provider down the list is executed.
+- If authentication fails, authentication continues down the list of providers.
+
+What should be the JAAS Control flag value in Apache Jackrabbit Oak External Login Module configuration?
+A.
+OPTIONAL
+
+B.
+SUFFICIENT
+
+C.
+REQUIRED
+
+D.
+MANDATORY
+
+
+https://docs.oracle.com/javase/8/docs/api/javax/security/auth/login/Configuration.html
+
+Es la B.
+112
+
+A project requires sharing information between SPA components.
+
+What is the least complex approach to achieve that objective?
+A.
+Implement a state library in order to share component states.
+
+B.
+Centralize the logic and broadcast to the necessary components.
+
+C.
+Utilize model props to drill down and access or set the state on desired components.
+
+D.
+Customize and extend the container component to leverage the object hierarchy.
+
+
+https://experienceleague.adobe.com/docs/experience-manager-64/developing/headless/spas/spa-getting-started-react.html?lang=en#sharing-information-between-spa-components
+
+Es la B.
+113
+
+An AEM Developer creates a custom OAK Lucene index for /content/mywebsite under /oak:index node. While testing the live site, it is found that the index is not being applied to any query within the website. Default Lucene indexes with high cost are being picked up by the AEM.
+
+What is the most likely cause of this issue?
+A.
+The custom OAK Lucene index is missing evaluatePathRestrictions property and queryPaths property.
+
+B.
+The custom OAK Lucene index must be replaced with OAK Lucene Property index.
+
+C.
+The custom OAK Lucene index is missing evaluatePathRestrictions property and includedPaths property.
+
+D.
+The custom OAK Lucene index must include boost property to rank it higher than default Lucene index.
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en
+
+Es la B.
+114
+
+An AEM application is required to create absolute urls for the web domain on which the application is supposed to run. The developer wants to create the absolute urls in the server to facilitate other use cases for SEO and Analytics.
+
+Which of the following options would work for the developer?
+A.
+Configure Day CQ Link Externalizer to remove the author domain.
+
+B.
+Configure Day CQ Link Externalizer to add a domain mapping to Author Server and Publish the page.
+
+C.
+Configure Day CQ Link Externalizer to add a domain mapping to Publisher/Web Server.
+
+D.
+Configure apache rewrite rules to create the absolute urls.
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/externalizer.html?lang=en#using-the-externalizer-service
+
+Es la C.
+115
+
+A developer has a requirement to add a new custom tab to the page properties of a specific page. The sling:resourceType of that page is \"foo/components/page\" and the sling:resourceSuperType of that page is \"core/wcm/components/page/v2/page\".
+
+What is the best approach?
+A.
+1. Copy the cq:dialog from app/core/wcm/components/page/v2/page to app/foo/components/page
+2. Remove all the tabs
+3. Add the custom tab
+
+B.
+1. Identify the location of the cq:dialog node from app/core/wcm/components/page/v2/page
+2. Identify the last entry of the items node
+3. Add the custom tab after that node
+
+C.
+1. Copy the cq:dialog from app/core/wcm/components/page/v2/page to app/foo/components/page
+2. Identify the last entry of the items node
+3. Add the custom tab after that node
+
+D.
+1. Create a new cq:dialog node under app/foo/components/page
+2. Add the nodes cq:dialog > content > items
+3. Add the custom tab in this node
+
+
+https://helpx.adobe.com/experience-manager/kt/sites/using/page-properties-technical-video-develop/6-3-page-properties-technical-video-develop.html 
+Es la A.
+116
+
+A custom AEM application contains Bundle A and Bundle B. Bundle A has a dependency to Bundle B via Import-Package.
+
+How can both bundles be deployed most efficiently accross all environments?
+A.
+Embed both bundles in one content package and use property 'installationOrder' in package properties for correct bundle installation order
+
+B.
+Create one content package per bundle and use a package dependency to ensure installation order
+
+C.
+Use the Felix Web Console to upload the bundles in the correct order
+
+D.
+Embed both bundles in one content package; the dependency via Import-Package is enough to ensure correct installation
+
+
+https://stackoverflow.com/questions/32455624/order-of-deployment-of-bundles 
+Es la D.
+117
+
+An AEM Developer is setting up a new AEM project for a custom SPA that will utilize the SPA Editor.
+
+Which command should the developer use?
+A.
+mvn -B archetype:generate \
+  -D archetypeGroupId=com.adobe.granite.archetypes \
+  -D archetypeArtifactId=aem-project-arquetype \
+  -D archetypeVersion=23 \
+  -D frontendModule=angular
+
+B.
+mvn -B archetype:generate \
+  -D archetypeGroupId=com.adobe.granite.archetypes \
+  -D archetypeArtifactId=aem-project-arquetype \
+  -D archetypeVersion=23 \
+  -D frontendModule=general
+
+C.
+mvn -B archetype:generate \
+  -D archetypeGroupId=com.adobe.granite.archetypes \
+  -D archetypeArtifactId=aem-project-arquetype \
+  -D archetypeVersion=23 \
+  -D frontendModule=react
+
+D.
+mvn -B archetype:generate \
+  -D archetypeGroupId=com.adobe.granite.archetypes \
+  -D archetypeArtifactId=aem-project-arquetype \
+  -D archetypeVersion=23 \
+  -D sdkVersion=latest
+
+
+https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en
+
+Es la D.
+118
+
+An AEM application must be highly available and scalable in distributed geographical scenario.
+
+Which approach should be used to meet the requirements?
+A.
+TarMK Cold Standby
+
+B.
+TarMK Farm
+
+C.
+Oak Cluster with MongoMK Failover Across Multiple Datacenters
+
+D.
+Oak Cluster with MongoMK Failover in a Single Datacenter
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/recommended-deploys.html?lang=en
+
+Es la C.
+119
+
+An AEM Developer needs to remove the pretitle option from within the Core Teaser component´s dialog.
+
+They start by:
+
+1. Creating a component with the Core Teaser component as its resourceSuperType
+2. Adding a _cq_dialog folder under the component
+
+Where are the next correct steps that the AEM Developer needs to take?
+A.
+1. Navigate to /apps/core/wcm/components/teaser/v1/teaser/cq:dialog/content/items/tabs/items/text/items/columns/items/column/items in CRX.
+2. Delete the pretitle child node.
+
+B.
+1. Create a file named .content.xml inside that new folder.
+2. Copy only the node structure that will be modified into .content.xml.
+3. Add sling:hideChildren[pretitle] to the parent node of the pretitle node.
+
+C.
+1. Create a file named dialog.xml inside that new folder.
+2. Copy the entire node structure from the Core Teaser component´s dialog.xml.
+3. Delete the pretitle node.
+
+D.
+1. Navigate to the new components dialog in CRX.
+2. Delete the pretitle child node.
+
+
+https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/hide-conditions.html?lang=en 
+
+Es la B.
+120
+
+What is Out of Scope for the Pattern Detector Tool, while doing an AEM upgrade?
+A.
+rep:User nodes compatibility (in context of OAuth configuration)
+
+B.
+Backward Compatibility with the previous AEM Version
+
+C.
+OSGI bundles exports and imports mismatch
+
+D.
+Definitions of Oak indices for compatibility
+
+
+https://experienceleague.adobe.com/docs/experience-manager-64/deploying/upgrading/pattern-detector.html?lang=en
+
+Es la B.
+
+
+121
+
+An AEM application wants to set up multi-tenancy using Adobe-recommended best practices and bind multiple configurations to it.
+
+Which of the following options is recommended?
+A.
+import org.osgi.service.metatype.annotations.AttributeDefinition;
+import org.osgi.service.metatype.annotations.ObjectClassDefinition;
+@ObjectClassDefinition(name = \"My configuration\")
+
+B.
+import org.osgi.service.metatype.annotations.Component;
+import org.osgi.service.metatype.annotations.Designate;
+@Component(service = ConfigurationFactory.class)
+@Designate(ocd = ConfigurationFactoryImpl.Config.class, factory = true)
+
+C.
+import org.apache.felix.src.annotations.Component;
+@Component(label = \"My configuration\", metatype = true, factory = true)
+
+D.
+import org.osgi.service.metatype.annotations.Component;
+@Component(service = ConfigurationFactory.class)
+
+
+https://sourcedcode.com/blog/aem/how-to-enable-configuration-for-osgi-components-with-r6
+
+Es la B.
+122
+
+Which option should be used to synchronize user data across publish servers in a publish farm?
+A.
+Using Vault plugin
+
+B.
+Replication Agents
+
+C.
+Using CURL
+
+D.
+Using Sling Distribution
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/sync.html?lang=en
+
+Es la D.
+123
+
+An AEM application must implement user testing using AEM Mocks.
+
+Which two services does the Class AemContext provide developers access to? (Choose two).
+A.
+FlushAgent
+
+B.
+Session
+
+C.
+TagManager
+
+D.
+WorkflowSession
+
+E.
+ModelFactory
+
+
+https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/unit-testing.html?lang=en
+
+Es la C y E.
+124
+
+A customer adds third-party client libraries to add some features in an existing AEM application, which will significantly reduce performance.
+
+What is the best option for the AEM Developed to optimize the site?
+
+A.
+Rebuild Client libraries
+
+B.
+Debug third-party client lib and fix the code
+
+C.
+Embed client libraries to consolidate them into fewer files
+
+D.
+Create new AEM application from Scartch
+
+
+https://helpx.adobe.com/experience-manager/kb/optimize-aem-site-performance.html 
+
+Es la C.
+125
+
+While doing an In-Place AEM upgrade, the developer observes an issue in the server logs where all are active except for the ACS Commons bundle which is incompatible due to old version.
+
+What should the developer to do resolve this issue?
+
+A.
+Ask for admin credential & install the new bundle in Felix console
+
+B.
+Update the plugin in pom.xml
+
+C.
+Drop the new package under path crx-quickstart/install and restart
+
+D.
+Install the new jar using the package manager on the old environment
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pre-upgrade-maintenance-tasks.html?lang=en#remove-updates-install-directory 
+
+Es la C.
+126
+
+Per the latest AEM archetype, what are two primary purposes of the it.launcher module? (choose two)
+
+A.
+Package up Junit tests that will later be executed server-slide
+
+B.
+Bundle up the code that deploys ui.test to the server
+
+C.
+Hold all mock data user for Junit testing
+
+D.
+Trigger remote Junit execution.
+
+E.
+Bundle all Hobbes tests for automating UI test.
+
+
+https://github.com/styladev/adobeExperienceManagerStylaPlugin 
+
+Es la B y D.
+127
+
+An AEM Developer needs to automate test for the user interface.
+
+Which tool is provided in the AEM framework for automated UI testing?
+
+A.
+Jasmine
+
+B.
+HobbesJS
+
+C.
+Sinon
+
+D.
+Mocha
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/hobbes.html?lang=en#components 
+
+Es la B.
+128
+
+An AEM application requires a service user WRITE access to children nodes but not on the parent node itself.
+
+Which console should the developer use to apply appropiate ACL?
+
+A.
+User Management console
+
+B.
+Group Management console
+
+C.
+OAuth Clients console
+
+D.
+Permmissions console
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=en#managing-users-and-groups 
+
+Es la A.
+129
+
+Which configuration takes precedence at runtime, when multiple configurations exist in AEM?
+
+A.
+Any .config file from <cq-installation-dir>/crq-quickstart/launchpad/config/... . on the local file system
+
+B.
+Repository nodes with type sling:OsgiConfig under /libs/*/config...
+
+C.
+Configurations that exist in the Web Console
+
+D.
+Repository nodes under /apps/*/config...
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=en#configuration-details 
+
+Es la D.
+130
+
+An AEM Developer receives requirements for Sling Models in a human-readable yaml format. A custom application needs to be built. The dependency is as show:
+
+<dependency>
+	<groupId>com.fasterxml.jackson.core</groupId>
+	<artifactId>jackson-databind</artifactId>
+	<version>2.8.4</version>
+	<scope>provided</scope>
+</dependency>
+<dependency>
+	<groupId>com.fasterxml.jackson.dataformat</groupId>
+	<artifactId>jackson-dataformat-yaml</artifactId>
+	<version>2.8.4</version>
+	<scope>provided</scope>
+</dependency>
+
+After implementing ModelExporter, which method should be used to meet this requirement?
+
+A.
+1. Create OSGI models to export as yalm
+2. Configure mime type in Apache Sling MIME Type Service
+
+B.
+1. Create Sling models to export as yaml
+2. Configure mime type in Apache Sling MIME Type Service
+
+C.
+1. Create OSGI models to export as yaml
+2. Configure mime type in Apache Sling Servlet/Script Resolver and Error Handler
+
+D.
+1. Create Sling models to export as yaml
+2. Configure mime type in Apache Sling Referrer Filter
+
+
+https://taradevko.com/aem/sling-model-exporter-now-really-custom/
+
+Es la B.
+131
+
+An AEM application requieres LDAP Service integration to synchonize user/group
+Which two OSGI configuration are required for LDAP integration in AEM? (Choose Two)
+
+A.
+Apache Jackrabbit Oak External Login Module
+
+B.
+Apache Jackrabbit oak Solr server provider
+
+C.
+Apache Jackrabbit Oak Default Sync Handler
+
+D.
+Apache Jackrabbit Oak CUG Configuration
+
+E.
+Apache Jackrabbit Oak Authorizable-ActionProvider
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ldap-config.html?lang=en#configuring-the-ldap-identity-provider
+
+Es la A y C.
+132
+
+Which URI should be used to configure a Flush Agent for a dispatcher listening on port 8080?
+
+A.
+http://<dispacherHost>:8080/cache.invalidate
+
+B.
+http://<dispacherHost>:8080/dispatcher/cache.invalidate
+
+C.
+http://<dispacherHost>:8080/invalidate.cache
+
+D.
+http://<dispacherHost>:8080/disptcaher/cache.invalidate
+
+
+https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#setting-up-aem-user-accounts 
+
+Es la C.
+133
+
+AEM SPA´s PageModelManager leverages the JSON Model Exporter.
+
+Which two meta fields are exposed through that exporter? (Choose Two))
+
+A.
+:parent
+
+B.
+:length
+
+C.
+:children
+
+D.
+:resource
+
+E.
+:type
+
+
+https://experienceleague.adobe.com/docs/experience-manager-64/developing/headless/spas/spa-blueprint.html?lang=en#general-concepts 
+
+Es la C y E.
+
+134
+
+An AEM Developer needs to create a log file for the project.
+
+Which next step should the developer take?
+
+A.
+Create a log file under /var/system/configuration... specific runmode folder(s).
+
+B.
+Create a log file under /apps/system/configuration... specific runmode folder(s).
+
+C.
+Create a log file under /apps/myproject/configuration... specific runmode folder(s).
+
+D.
+Ask AMS/DevOps for admin access to create a log file via console
+
+
+https://helpx.adobe.com/experience-manager/using/custom_log_file.html 
+
+Es la C.
+135
+
+A developer creates two classes. ClassA has the following code:
+
+package com.aem.abc;
+import org.slf4.Logger:
+import org slf4.LoggerFactory;
+public class ClassA{
+private static final Logger logger = LoggerFactory.getLogger(this.getClass());
+   public void classAMethod() {
+       logger.debug(\"Message from Class A method\");
+    }
+}  
+
+The developer creates a custom log custom.log with debug level in OSGI sling log support for the Java package com.aem.abc. The developer adds another class ClassB with the following code:
+
+package com.aem.xyz;
+import org.slf4.Logger:
+import org slf4.LoggerFactory;
+public class ClassB{
+private static final Logger logger = LoggerFactory.getLogger(this.getClass());
+   public void classBMethod() {
+       logger.debug(\"Message from Class B method\");
+    }
+}  
+
+Which action must the developer take to see the log messages in the same file from both classes?
+
+A.
+Configure custom.log in the OSGI web console --> Sling --> Log Support and replace logger com.aem.abc with com.aem
+
+B.
+Configure custom.log in  OSGI web console --> Sling --> Log Support and replace logger com.aem.xyz with com.aem.abc
+
+C.
+Configure custom.log in the OSGI web console --> Sling --> Log Support and replace the package com.aem.abc  with com.aem.xyz
+
+D.
+Create separate a log file in the OSGI web console --> Sling --> Log Support for logger com.aem.xyz
+
+
+https://helpx.adobe.com/experience-manager/using/custom_log_file.html
+
+Es la A.
+136
+
+Which solution should be used to synchronize user permissions across AEM servers?
+
+A.
+ACS Commons ACL Packager
+
+B.
+Maven Vault plugin
+
+C.
+User Sync tool
+
+D.
+ACS Commons Authorizable Packager
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/sync.html?lang=en#introduction 
+
+Es la C.
+137
+
+The OSGI configuration is added to a runmode specific configuration \"config.author.staging\" in AEM as a Cloud Service. The application fails to read the configuration.
+
+What is a possible cause of this issue?
+
+A.
+AEM as a Cloud service does not support ORGI configuration runmodes.
+
+B.
+The custom OSGI configuration runmode used (i.e., \"config.author.staging\") is not supported in AEM as a Cloud service.
+
+C.
+OSGI configuration runmodes cannot be installed automatically on AEM as a Cloud Service. We need to install them as a package using the Package manager.
+
+D.
+Only <service> specific OSGI configuration runmodes like \"config.author\" os \"config.publish\" are supported in AEM as a Cloud service.
+
+
+https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#runmode-resolution
+
+Es la B.
+138
+
+Which configuration/section should be used to resolver the domain name by dispatcher?
+
+A.
+Configuration in httpd.conf
+
+B.
+Configuration in filters.any
+
+C.
+Configuration in DNS
+
+D.
+Configuration in vhost file
+
+
+https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-domains.html?lang=en#define-virtual-hosts-on-the-web-server
+
+Es la A.
+139
+
+Where should an AEM Developer add a frond end dependency?
+
+A.
+settings-xml
+
+B.
+config.json
+
+C.
+vault.xml
+
+D.
+package.json
+
+
+https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/integrate-spa.html?lang=es#agregar-estilos-con-sass
+
+Es la D.
+
+140
+
+SPA components are connected to AEM componentes via the MapTo() method. Which code should be used to correctly connect an SPA component called ItemList to its AEM equivalent?
+
+A.
+MapTo (ItemList) (‘project/components/content/itemList’,ItemListEditConfig);
+
+B.
+MapTo (‘project/components/content/itemList’,ItemListEditConfig);
+
+C.
+ItemList.MapTo(‘proyect/components/content/itemList’);
+
+D.
+(‘project/components/content/itemList’).MapTo(ItemList, ItemListEditConfig);
+
+
+https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/map-components.html%3Flang%3Dko#create-the-image-component
+
+Es la A.
+141
+
+Which tool allows assets to be shared with multiple AEM instances as read-only local assets?
+
+A.
+Package Manager
+
+B.
+Felix Console
+
+
+C.
+Connected Assets
+
+D.
+Asset Link Share
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=en#using
+
+Es la C.
+
+142
+
+A developed needs to create sling models for two fields name and occupations. The dialog has two fields, name – a single value field, and occupations – a multi value field. 
+The following code is included in sling models inherited from interface com.adobe.aem.guides.wknd.core.models.Byline
+
+package com.adobe.aem.guides.wknd.core.models.impl;
+……
+public class BylineImpl implements Byline{
+   ……
+   @Override
+   public List <String> getOccupations(){
+       if (occupations!=null){
+          Collections.sort(occupations);
+          return new ArrayList<String> occupations;
+       }else{
+          return Collections.emptyList();
+
+      }
+   …..
+}
+
+Which method should be used to represent this model in HTL?
+
+A.
+<div data-sly-use-byline=” com.adobe.aem.guides.wknd.core.models.Byline.impl”
+data-sly-use-placeholderTemplate=”core/wcm/components/commons/v1/templates.html”
+data-sly-test-hasContent=”\${!byline.empty}” class=”cmp-byline”>
+<h2 class=”cmp-byline__name”>\${byline.name}”</h2>
+<p class= cmp-byline__pccupations”>\${byline.occupations @ join=’, ‘}</p>
+</div>
+
+B.
+<div data-sly-use-byline=” com.adobe.aem.guides.wknd.core.models.Byline”
+data-sly-use-placeholderTemplate=”core/wcm/components/commons/v1/templates.html”
+data-sly-test-hasContent=”\${!byline.empty}” class=”cmp-byline”>
+<h2 class=”cmp-byline__name”>\${byline.name}”</h2>
+<p class= cmp-byline__occupations”>\${byline.occupations @ join=’, ‘}</p>
+</div>
+
+
+C.
+<div data-sly-use-byline=” com.adobe.aem.guides.wknd.core.models.Byline”
+data-sly-use-placeholderTemplate=”core/wcm/components/commons/v1/templates.html”
+data-sly-test-hasContent=”\${!byline.empty}” class=”cmp-byline”>
+<h2 class=”cmp-byline__name”>\${byline.name @ join=’, ‘}”</h2>
+<p class= cmp-byline__occupations”>\${byline.occupations @ join=’, ‘}</p>
+</div>
+
+D.
+<div data-sly-use-byline=” com.adobe.aem.guides.wknd.core.models.Byline”
+data-sly-use-placeholderTemplate=”core/wcm/components/commons/v1/templates.html”
+data-sly-test-hasContent=”\${!byline.empty}” class=”cmp-byline”>
+<h2 class=”cmp-byline__name”>\${byline.name}”</h2>
+<p class= cmp-byline__occupations”>\${byline.occupations }</p>
+</div>
+
+
+https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/expression-language.html?lang=en#array-join
+
+Es la B.
+143
+
+A developer is using sling context-aware configuration trying to get the configuration resource using:
+
+@Reference
+Private ConfigurationResourceResolver cfgResourceResolver;
+confResource = cfgResourceResolver.getResource(resource, BUCKET_NAME, CONFIG_NAME);
+
+This Works as intended in autor and in publish when logged in to publish as admin. However this given a null when run as anonymous.
+Which method is going to fix the issue?
+
+A.
+Applying read permissions to anonymous user for /etc directory.
+
+B.
+Applying read permissions to anonymous user for /config directory.
+
+
+C.
+Applying read permissions to anonymous user for /content directory.
+
+D.
+Applying write permissions to anonymous user for /config directory.
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html#osgi-configuration-in-the-repository
+
+Es la B.
+144
+
+A developer needs to make template T avaliable as a child page of page P. The developer has determined that:
+- Template T matches cq:allowedTemplates property on page P.
+- Template T has no allowedPaths property set.
+- Template T is not in the same application as page P.
+- The template of page P has no match on the allowedParents property of template T.
+- Template T has no match on the allowedTemplates property on the template of page P.
+
+What should the developer change?
+
+A.
+Make page P match allowedPaths property of template T.
+
+B.
+Make the allowedParents property of template T match the template of page P.
+
+
+C.
+Migrate template T to the same aplicación as page P.
+
+D.
+Clear the allowedParents property of template T.
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/templates.html?lang=en#templates-content-fragments 
+
+Es la B.
+
+145
+
+An AEM appication must process a high volumen of content ingestion on the author server.
+
+What is a key factor to optimize a design for overall performance gain for implementing workflows?
+
+A.
+Use Transient workflows
+
+B.
+Allocate more RAM for the content ingestión up front.
+
+
+C.
+Run garbage collection every time content ingestión occurs.
+
+D.
+Use schedulers to run the workflows only on weeked
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html?lang=en#workflows
+
+Es la A.
+146
+
+A developer is having trouble trying to include a new embeddable into the Embed core component.
+- The Developed is using the versión 1 Embed component from WCM Core components.
+- The Developed sees the new embeddable component as a normal component that can be added to the page, which is incorrect.
+- The Developed does not see the new embeddable component as an option in the Embed component.
+
+Which approach should be used to define the new component?
+
+A.
+<jcr:root xmlns:sling=http://sling.apache.org/jcr/sling/1.0 xmlns:jcr=http://www.jcp.org/jrc/1.0 jcr:primaryType=”cq:Component” jcr:title=”Foo” sling:resourceSuperType=”core/wcm/components/embed/v1/embed/embeddable” componentGroup=” embeddable”/>
+
+B.
+<jcr:root xmlns:sling=http://sling.apache.org/jcr/sling/1.0 xmlns:jcr=http://www.jcp.org/jrc/1.0 jcr:primaryType=”cq:Component” jcr:title=”Foo” sling:resourceType=”core/wcm/components/embed/v1/embed” componentGroup=” .hidden”/>
+
+C.
+<jcr:root xmlns:sling=http://sling.apache.org/jcr/sling/1.0 xmlns:jcr=http://www.jcp.org/jrc/1.0 jcr:primaryType=”cq:Component” jcr:title=”Foo” sling:resourceType=”core/wcm/components/embed/v1/embed/embeddable” componentGroup=” embeddable”/>
+
+D.
+<jcr:root xmlns:sling=http://sling.apache.org/jcr/sling/1.0 xmlns:jcr=http://www.jcp.org/jrc/1.0 jcr:primaryType=”cq:Component” jcr:title=”Foo” sling:resourceSuperType=”core/wcm/components/embed/v1/embed/embeddable” componentGroup=” .hidden”/>
+
+
+https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component
+
+Es la D.
+147
+
+A customer needs to store approximately 200 raw data items from REST API and display each item as an AEM Page. A draft page template exists. 
+
+Which method should be used to meet this requirement?
+
+A.
+Build a segment using data from REST API call
+
+B.
+Create pages by binding the data for each item using the draft page template and custom data retrieval logic.
+
+
+C.
+Create Experience Fragments by bindings the data for each item using the draft page template and custom data retrieval logic.
+
+D.
+Create Content Fragments by binding the data for each item using the draft page template and custom data retrieval logic.
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=en#extending 
+
+Es la D.
+148
+
+A developer has built a dropdown containing each of the fifty U.S states as a static option. The dialog node is called states. A new requirement is asking to use that same dropdown in another component´s dialog.
+
+Which method would be a more modular approach to the solution?
+
+A.
+1. Extrapolate out the states node to a more generic location.
+2. Set that new location as the resourceSuperType
+
+B.
+1. Extrapolate out the states node to a more generic location.
+2. Use granite:include in both components bring in only what is needed.
+
+
+C.
+Copy and paste the entire state node from the old component to the new one.
+
+D.
+Copy and paste only the options from the old component to the new one.
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html?lang=en#purpose 
+
+Es la A.
+149
+
+ A developed identifies that some requests for the page /content/sampleproject/page.html take long than other request for the same page. Refer to the $DOCROOT/content/sampleproject directory below.
+[user@gropu /opt/dispatcher/cache/content/sampleproject ] $ ls –la
+Total 2
+drwxr-xr-x. 5 apache apache 4096 Feb 11 11:41 .
+drwxr-xr-x. 3 apache apache 4096 Nov 29 16:07 ..
+drwxr-xr-x. 4 apache apache 4096 Feb 7 03:21 page.html
+-rw-r—r--.  1 apache apache 0 Feb 7 03:19 .stat
+
+The dispatcher.log file contains the following lines:
+
+[Wed Feb 13 13:14:04 2012] [D] [1376(1532)] checking [/libs/cq/security/userinfo.json]
+[Wed Feb 13 13:14:04 2012] [D] [1376(1532)] Caching disabled due to query string: tracking_id=1350373444666
+[Wed Feb 13 13:14:04 2012] [D] [1376(1532)] cache-action for [/libs/cq/security/userinfo.json]: NONE
+
+How should the developer make sure that the page is always cached?
+
+A.
+Modify the dispatcher.any file to contains the following lines:
+/rules
+{
+…
+/0000 {/glob “*” /type “allow” /params “tracking_id” }
+…
+}
+
+B.
+Modify the dispatcher.any file to contains the following lines:
+/filter
+{
+…
+/0023 { /type “allow” /url “/content//.html” /params “tracking_id” }
+…
+}
+
+
+C.
+Modify the dispatcher.any file to contains the following lines:
+/ignoreUrlParams
+{
+…
+/0002 { /glob “tracking_id”   /type “allow” }
+…
+}
+
+
+D.
+Modify the dispatcher.any file to contains the following lines:
+/filter
+{
+…
+/0023 {  /type “allow”  /url “/content//.html?tracking_id=*” }
+…
+}
+
+
+
+
+
+https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters 
+
+Es la C.
+150
+
+AEM recommends a team to upgrade AEM servers with In-place Upgrade because the existing versions has reached EOL.
+
+What are two disadvantages of perfoming in a In-place Upgrade to the latest version of AEM? (Choose two.)
+
+ 
+A.
+ACLs, users, and groups are lost.
+
+B.
+Content migration is required.
+
+
+C.
+Complex developer setup and automation of the upgrade process.
+
+
+D.
+Content revision history is not preserved.
+E.
+Depending on the version difference between the old and new instances, the upgrade can be a long and aduous process.
+
+
+
+https://www.bounteous.com/insights/2018/08/30/aem-upgrades-quick-guide-minimize-your-risk/
+
+Es la C y E.
+
+151
+
+ A company wants to reuse content with several multi-nacional same-language sites and decides to use MSM in AEM. This allows the core content to be re-used, while allowing for nacional variations.
+
+What is the recommended MSM design for the wesite?
+
+
+A.
+/content
+  l– we.retail
+        l- live-copy
+             l- en
+  l– we.retail
+         l- us
+              l- en
+  l– we.retail
+         l- gb
+              l- en
+  l– we.retail
+          l- ca
+              l- en
+  
+
+B.
+/content
+  l– we.retail
+          l- language-masters
+               l- en
+  l– we.retail
+         l- us
+               l- en
+  l– we.retail
+          l- gb
+               l- en
+  l– we.retail
+         l- ca
+               l- en
+l– we.retail
+         l- au
+               l- en
+
+  
+
+C.
+/content
+   l– we.retail
+      l- en
+               l- us
+               l- gb
+       l- fr
+               l- fr
+               l- ca
+
+   
+
+
+D.
+/content
+   l– we.retail1
+      l- en
+   l– we.retail2
+      l- en
+   l– we.retail3
+      l- en
+   l– we.retail4
+      l- en
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-bp.html?lang=en#site-structure 
+
+Es la B.
+152
+
+A customer is having trouble with some search queries and provides the following information:
+- The logs show the following warning occurs many times: *WAR* Traversed 1000 nodes with filter Filter(query=select …)
+- The client has more than 100,000 pages stored in their AEM instance.
+- The client uses a custom page property to help search for pages of a given type.
+
+What should the AEM Developer do to help resolve client´s issue?
+
+A.
+Advise the client to reorganize their content by having nodes of no more than 10,000.
+
+B.
+Create a custom oak index the custom page property.
+
+
+C.
+Set the reindex flag to true for node ‘oak:index/cqPageLucene’.
+
+D.
+Use the Index Manager to validate the ‘cqPageLucene’ index is enabled.
+
+
+https://experienceleague.adobe.com/docs/experience-manager-64/deploying/deploying/queries-and-indexing.html?lang=en#configuring-the-indexes
+
+Es la B.
+
+
+153
+
+Which type of configuration can be created in OSGI Configuration Manager?
+
+A.
+Bundles Configuration
+
+B.
+Run modes Configuration
+
+
+C.
+Components Configuration
+
+D.
+Service Configuration
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=en#osgi-configuration-with-the-web-console 
+
+Es la A.
+154
+
+While working with Editable Templates, the author reports that the changes that the author makes are lost periodically.
+
+What should the AEM Developer fix to prevent losing author updates?
+
+A.
+Set mode to be “merge” in the filter.xml
+
+B.
+Move the affected Editable template to /etc/templates
+
+C.
+Move the affected Editable template to /apps/templates
+
+D.
+Set mode to be “update” in the filter.xml
+
+
+https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=en
+
+Es la A.
+155
+
+An AEM server is overloaded with too many concurrently running workflows. The developer decides to reduce the number of concurrent workflows.
+
+What should be configured to reduce the number of concurrent workflows?
+
+A.
+The number of threads in Scheluder
+
+B.
+Maximum Parallel Jobs in OSGI console
+
+C.
+The number of threads in Apache Felix Jetty Http Service
+
+D.
+Launchers for each workflow
+
+https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=en#tuning-dam-workflows
+
+Es la B.
+156
+
+An AEM application development team is assigned a task to create an Event-Driven Data Layer implementation for a Analytics solution.
+
+Which Adobe recommended best practice should the developer choose?
+
+A.
+Create an Adobe Cloud Service configuration to use third-party tool´s data layer
+
+B.
+Create a custom data layer and add each component, template, and its properties to the data layer
+
+C.
+Use Adobe Experience Platform´s data layer to integrate with AEM
+
+D.
+Use Adobe Client Data Layer and integrate with Core components
+
+
+https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=en#integrations
+
+Es la D.
+157
+
+An AEM Developer sets an argument variable “myVariable” to be consumed by workflow process in the same workflow model definition.
+
+Which approach should be used?
+
+A.
+//Get myVariable directly from MetaDataMap 
+String myVariable = workItem.getMetaDataMap().get(“myVariable”);
+
+B.
+//Get myVariable from HistoryItem object 
+List<HistoryItem> history = workflowSession.getHistory(workItem.getWorkflow());
+
+C.
+//Get myVariable from WorkflowData
+String myVariable = workItem.getWorkflowData().getPayload().toString();
+
+D.
+//Get myVariable from args
+String args = metadataMap.get(“PROCESS_ARGS”,String.class);
+
+
+https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=en#workflow-steps-without-support-for-variables
+
+Es la A.
+158
+
+A developer wants to consume AEM Page Data in a Single Page Application. The Single Page Application is coded to understand JSON format. Only page content should be exposed through JSON. All the existing components are based on foundation components.
+
+Which change should the developer make in the existing components to support this requirement?
+
+A.
+Implement a Sling Model Exporter for the components
+
+B.
+Invoke the page URL with the extension .json to get the values to construct the required output
+
+C.
+Create a custom sling event handler to handle JSON requests
+
+D.
+Add JSON as the default extension in Apache Sling Servlet/Script Resolver and Error Handler Configuration
+
+
+https://experienceleague.adobe.com/docs/experience-manager-64/developing/headless/spas/spa-overview.html?lang=en#authoring-workflow 
+
+Es la A.
