@@ -2746,3 +2746,18 @@ Add JSON as the default extension in Apache Sling Servlet/Script Resolver and Er
 https://experienceleague.adobe.com/docs/experience-manager-64/developing/headless/spas/spa-overview.html?lang=en#authoring-workflow 
 
 Es la A.
+
+159.
+An AEM Developer sets up an AEM project using the AEM Archetype. The build fails on its first run of mvn install due to depenrencies not found. What are the two most likely causes?(Choose Two)
+
+A. There is no adobe-public profile configured in settings.xml
+
+B. The .m2 repository has outdated dependencies
+
+C. The adobe-public profile dependencies are no present in the .m2 repository
+
+D. The build command requires at least one profile
+
+E. The developer did not add the adobe-public profile to the build command
+
+Es la A y la B
