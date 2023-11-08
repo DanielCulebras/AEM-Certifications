@@ -193,8 +193,7 @@
 
 **Pregunta 38**
 - Enunciado: ¿Qué etiqueta XML se utiliza en la definición de paquetes de bóveda para agregar una nueva ruta a un paquete de contenido?
-- Respuesta (A): <filter>.
-- Respuesta en inglés (A): <filter>.
+- Respuesta (A): \<filter\>.
 
 **Pregunta 39**
 - Enunciado: Un desarrollador desea truncar automáticamente los archivos de registro de solicitudes una vez que superen los 10 MB.
@@ -203,8 +202,7 @@
 
 **Pregunta 40**
 - Enunciado: Una biblioteca de cliente tiene la categoría "library.example".
-- Respuesta (A): <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='library.example'}"/>.
-- Respuesta en inglés (A): <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='library.example'}"/>.
+- Respuesta (A): \<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='library.example'}"/\>.
 
 **Pregunta 41**
 - Enunciado: Un desarrollador necesita instalar un paquete de contenido en un entorno de AEM. Sin embargo, ya está instalado un paquete de contenido con el mismo nombre. ¿Cuál sería la forma más segura para que el desarrollador instale el paquete de contenido para asegurarse de que solo se apliquen los cambios del nuevo paquete de contenido?
