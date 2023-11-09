@@ -2761,3 +2761,21 @@ D. The build command requires at least one profile
 E. The developer did not add the adobe-public profile to the build command
 
 Es la A y la B
+
+160.
+An AEM Developer needs to create a new component to help support a new product launch.
+-The client is on AEM 6.5 on-premise with the latest version of WCM Core Components.
+-The component must include text, image, and a link.
+-The component must support multiple designs.
+Which process should the AEM Developer use to support the launch?
+
+A. 1. Extend the Teaser Component from Core Components
+   2. Create style variations to be used in the Style System.
+B. 1. Create a new Image with Text component that exposes the Core Components authoring dialogs for those components.
+   2. Add a policy to define which designs are used.
+C. 1. Extend the Text Component from Core Components.
+   2. Enable image manipulations for the Text Component via policy.
+D. 1. Create a new component by extending thE Text Component from Core Components.
+   2. Add dialog properties and modify HTL to support images.
+
+Es la D
