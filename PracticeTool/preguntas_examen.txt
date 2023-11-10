@@ -2779,3 +2779,13 @@ D. 1. Create a new component by extending thE Text Component from Core Component
    2. Add dialog properties and modify HTL to support images.
 
 Es la D
+
+161.
+A project has a requierement to extend to WCM Core component consisting of Image. The requirements is also to add Title, Description, Link and display the titles of a few pages by links. How should a developer proceed?
+A. 1. Extend Teaser from Core components. 2. Customized it to add the Titles by tags
+B. 1. Extend Image form Core Components. 2. Add an HTL Template for Title extended Core Components 3. Add an HTL Template for List extended Core Components. 4. Add a reference to Title and List Components Dialog Box.
+C. 1. Extend Teaser from Core Components. 2. Add an HTL Template for List extended Core Components. 3. Add a reference to List Component Dialog box.
+D. Create a custom component as per the requirements
+
+Es la C.
+https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html?lang=en
