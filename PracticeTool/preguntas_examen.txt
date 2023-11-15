@@ -2987,3 +2987,41 @@ C. The SPA is compatible with the template editor.
 D. The developer keeps control over the app by only enabling authoring in restricted areas of the app
 
 Es la B
+
+178.
+What are two limitations of an AEM full SPA implementation with frontend routing? (Choose two)
+A. Cannot generate a true 404 response for dynamically generated pages
+B. Cannot generate sitemaps
+C. Metadata must be stored in two locations: app and page
+D. Cannot mix SPA components with AEM components
+E. Cannot extend WCM Core components
+
+Es la B y D
+                    https://thegray.company/blog/single-page-application-spas-404s-seo
+https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/sitemap-for-spa-sites-with-aem-spa-implementation/qaq-p/374668
+
+179.
+An AEM developer is tasked to make an existing AEM website content to be consumable by other channels.
+ What methods would allow for this to occur?
+A. Update the existing Sling Models to expose the fields in the default JSON format. 
+B. Create an additional replication agent to push the content in an external system that
+ the other channels can query.
+C. Migrate the site structure and components to use content fragments and experience 
+fragments
+D. Create additional Sling Models for each component to support the preferred JSON.
+
+Es la C
+                    -	https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter.html?lang=en
+
+
+180.
+An application requires custom languages to be supported that are not present in AEM OOB
+Wich approach is recommended?
+A. Add the custom languages in the website´s content pages. 
+B. Override /libs/wcm/core/resources/languages and add custom languages.
+C. Overlay /libs/wcm/core/resources/languages and add custom languages
+D. Add the custom languages in AEM projects.
+
+Es la B
+                    -  https://aem4beginner.blogspot.com/add-custom-language-in-aem-65 
+                
