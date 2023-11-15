@@ -2830,7 +2830,7 @@ E. PowerMock.
 
 Son la A y la C.
 
-166
+166.
 A developer is tasked with removing a user from a group on the LDAP server. What is a way to determine if the process was implemented correctly?
 A. The change will also be reflected on the AEM side upon syncronization
 B. The change will also be reflected on the AEM side straight away
@@ -2838,3 +2838,152 @@ C. The user must be removed in AEM before it is remoeved from LDAP
 D. The group must be syncronized with AEM before the user is removed
 
 Es la A
+
+167.
+An AEM developer wants to display localized page names to users of translated content. Rather than having a Spanish-speaking user navigate to: www.mydomain.com/es/home.html, the developer wants the URL to be: www.mydomain.com/es/casa.html. What is the recommended way of achieving this?
+A. Add a property sling:alias = casa to /es/home
+B. Write a Bin Servlet to handle the request - @SlingServlet(paths = "/bin/myApp/myServlet"
+C. Modify /etc/map to resolve the URL .../es/casa
+D. Use Vanity URL to redirect .../es/casa to es/home
+
+Es la C
+
+168.
+An AEM developer is assigned a task to design a workflow. The workflow is supposed to collect data from the participant and then determine the reviwer/approver branch to proceed further
+Wich workflow step should be used by the developer?
+A. Workflow Initiator Participant Chooser. 
+B. Form Participant Step.
+C. Dynamic Participant Step
+D. Dialog Participant Step.
+
+Es la C
+
+169.
+Wich practice should be used to push a code fox to make it into the current release candidate
+A. Make the fix in CRX where the current release candidate is currently deployed. 
+B. Cherry-pick the fix commit into the release candidate.
+C. Make the fix locally and upload the package to where the release candidate is dpeloyed
+D. Cut a new release candidate from the mas branch.
+
+Es la D
+
+170.
+An AEM Developer wants to display localized page names to users of translated content.
+Rather than having a Spanish-speaking user navigate to: www.mydomain.com/es/home.html The Developer wants the URL to be: www.mydomain.com/es/casa.html
+What is the recommended way of achieving this?
+A. Add a property sling:alias = casa to ../es/home
+B. Write a Bin Servlet to handle the request - @SlingServlet(paths = '/bin/myApp/myServlet'...
+C. Modify /etc/map to resolve the URL .../es/casa
+D. Use Vanity URL to redirect .../es/casa to .../es/home
+
+Es la C
+
+171.
+A developer needs to create a component with the following requirements
+The component must be configurable, the component shloud be editable, NOT removable an author should be unable to add the component to a packages through design mode
+Wich node structure should the developer use to meet these requirements?
+A. component
+	- jcr:primaryType="cq:Component"
+	- jcr:title="Component"
+	- componentGroup=".hidden"
+	- cq:dialog
+	...
+	- cq:editConfig
+	- cq:actions = "[edit]"
+B. component
+	- jcr:primaryType="cq:Component"
+	- jcr:title="Component"
+	- hidden="true"
+	- cq:dialog
+	...
+	- cq:editConfig
+	- cq:actions = "[edit]"
+C. component
+	- jcr:primaryType="cq:Component"
+	- jcr:title="Component"
+	- componentGroup=".hidden"
+	- cq:actions = "[edit]"
+	...
+	- cq:dialog
+	...
+D. component
+	- jcr:primaryType="cq:Component"
+	- jcr:title="Component"
+	- cq:actions = "[edit]"
+	- cq:dialog
+	...
+
+Es la A.
+
+172.
+When will a page be cached using ignoreUrlParams configuration in dispatcher?
+A. /0001 { /glob "q" /type "deny" } allows the URL with parameter "q" to be cached
+B. When a request URL contains a suffix to be cached, the page is cached
+C. When a request URL contains one of the parameters is ignored, the page is cached
+D. When a request URL contains parameters that are all ignored, the page is cached
+
+Es la C
+
+173.
+A company is building an AEM application with a third party jar file. The third party APIs connect to an external app and pulls the data.
+The third party keeps updating with features and fixes.
+Which method should be used to integrate this jar file?
+A. Convert the jar file into zip and install using a package manager.
+B. Install the jar file using a package manager.
+C. Create a bundle with the jar embedded as a dependency.
+D. Upload the jar file into DAM assets.
+
+Es la C
+
+174.
+A developer needs to retrieve a calculated property from a page in a JobConsumer. The model below has the logic to calculate this property. A first attempt to execute resource.adaptTo(ArticlePage.class) in the JobConsumer fails.
+@Model(adaptables = SlingHttpServletRequest.class, adapters = {ArticlePage.class, Page.class}, resourceType = ArticlePageImpl.RESOURCETYPE)
+@Exporter(name = ExporterConstants.SLINGMODELEXPORTERNAME, extensions = ExporterConstants.SLINGMODELEXTENSION)
+public class ArticlePageImpl implements ArticlePage {
+@Self
+protected SlingHttpServletRequest request;
+@ScriptVariable
+private Page currentPage;
+...
+@Override
+public String calculatedProperty() {
+...
+}
+}
+What should the developer do?
+A. Create a new model with annotation to @Model(adaptables = Resource.class, adapters = {ArticlePage.class, Page.class}, resourceType = ArticlePageImpl.RESOURCE_TYPE}
+B. Update the model annotation to @Model(adaptables = {Resource.class, SlingHttpServletRequest.class}, adapters = {ArticlePage.class, Page.class}, resourceType = ArticlePageImpl.RESOURCE_TYPE}
+C. Execute resource.adaptto(Page.class) in the JobConsumer class
+D. Create a mock request and execute request.adaptTo(Page.class) in the JobConsumer class
+
+Es la B
+
+175.
+If multiple configurations for the same PID are applicable, which configuration is applied?
+A. The configuration with the highest number of matching run modes is applied.
+B. The one that occurs first in the repository is applied.
+C. A configuration factory is created and all configurations are applied.
+D. The last modified configuration is applied.
+
+Es la A
+
+176.
+An AEM application is expected to export a content fragment in JSON format as is without any customization for a headless implementation.
+ What's the recommended approach for same? 
+A. Use Sling Exporter framework
+B. Use Core components to export JSON 
+C. Write Custom sling Models to export the fragments.
+D. Use AEM Assets HTTP API 
+
+Es la D.
+
+177.
+AEM SPA integration provides various design models. In an application the developer chooses to use AEM as a headless CMS without using the SPA
+ Editor SDK framework 
+ What would be an advantage for this design model?
+A. The content author can edit the app using AEM's content authoring experience. 
+B. The front end developer has full control over the app
+C. The SPA is compatible with the template editor.
+D. The developer keeps control over the app by only enabling authoring in restricted areas of the app
+
+Es la B
